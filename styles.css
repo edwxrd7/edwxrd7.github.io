@@ -1,6 +1,6 @@
 body {
-  background: #D2B48C;
-  color: rgb(10,10,10);
+  background: rgb(170, 147, 124);
+  color: rgb(255, 255, 255);
   font-family: Tahoma;
 }
 p{
@@ -18,13 +18,28 @@ legend{
 border:none;
 font-size: 10px;
 }
-
+@keyframes pulsate {
+  100%{
+    text-shadow:
+    0 0 7px rgb(0,255,0),
+    0 0 14px rgb(0,255,0),
+    0 0 17px rgb(0,255,0),
+    0 0 24px rgb(0,255,0),
+    0 0 34px rgb(0,255,0);
+  }
+  
+}
 #gren{
-  color: #DC143C;
-  font-size: 20px;
+  color: rgb(200,255,200);
+  font-size: 30px;
+  font-weight: bold;
+  animation:pulsate 1.5s infinite alternate;
 }
 .gren{
   text-align: center;
+}
+a{
+  text-decoration: none;
 }
 .center{
   text-align:center;
