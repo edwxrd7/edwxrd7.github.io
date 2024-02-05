@@ -1,0 +1,107 @@
+body{
+  background:linear-gradient( rgb(4, 110, 0), rgb(17, 70, 9),rgb( 5, 110, 0));
+  color:rgb(255, 255, 255);
+}
+*{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bold{
+  font-weight:bold;
+}
+img{
+  width:100%;
+  max-width: 350px;
+}
+a{
+  color:rgb(4, 242, 0);
+  text-decoration: none;
+}
+.link_space{
+  margin:0 5px;
+}
+li{
+  text-align: justify;
+  align-items: center;
+}
+fieldset{
+  border:none;
+}
+.img{
+  box-shadow: 0 0 3px 3px rgb(9,255,0);
+  border-radius: 9px;
+}
+table th, td{
+  border:1px solid rgba(0, 255, 0, 0.631);
+
+}
+ol li{
+  text-align: center;
+  list-style-position: inside;
+}
+table{
+  margin:auto;
+  padding-bottom: 1rem;
+}
+form{
+  width:70vw;
+  margin:0 auto;
+  padding-bottom: 2rem;
+}
+.jan28{
+  display:block;
+}
+#jan28{
+  background:linear-gradient(rgb(69, 0, 0), rgba(136, 22, 22, 0.906),rgb(69, 0, 0));
+  color:rgb(255,235,205);
+}
+
+input, option, select{
+  border:none;
+  color:rgb(255,235,205);
+  background:linear-gradient(rgb(244, 120, 120), rgb(255,0,0), rgb(244,120,120));
+  border-radius: 15px;
+  margin-left:10px ;
+  margin-top: 10px;
+}
+
+::placeholder{
+  color:rgb(255,235,205);
+}
+.red{
+  color:red;
+}
+.bor{
+  border-bottom: 1px solid red;
+}
+#submit{
+  width:100px;
+  background: rgba(212, 6, 6, 0.685);
+  font-weight:bold;
+}
+/*below controls web eval*/
+.space2{
+margin-top: 2rem;
+}
+.yellow{
+  color:yellow;
+}
+.no_style{
+  list-style-type: none;
+}
+/*Making the hover pulsate*/
+@keyframes pulsate {
+  100%{
+    text-shadow:
+    0 0 7px rgb(250, 255, 0),
+    0 0 14px rgb(251, 255, 0),
+    0 0 17px rgb(250,255,0),
+    0 0 24px rgb(250,255,0),
+    0 0 34px rgb(250, 255, 0);
+  }
+  
+}
+a:hover{
+  animation:pulsate 1.0s infinite alternate;
+  color:yellow;
+}
