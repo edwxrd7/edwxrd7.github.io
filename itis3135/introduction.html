@@ -9,20 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>Edward Henriquez Enigmatic Hamster || ITIS 3135</h1>
-        <nav>
-            <a class="link_space" href="./">Home</a>
-            <a class="link_space" href="introduction.html">Introduction</a>
-            <a class="link_space" href="contract.html">Contract</a>
-            <a class="link_space" href="tables.html">HTML Tables</a>
-            <a class="link_space" href="forms.html">HTML Form</a>
-            <a class="link_space" href="website_evaluations.html">Web Evaluations</a>
-        </nav>
-        <nav>
-            <a href="Crappy/@LETS7 VIBE.htm">Crappy</a>
-        </nav>
-    </header>
+    <div data-include="components/header.html"></div>
     <main>
         <h2>Introduction</h2>
         <figure>
@@ -44,7 +31,7 @@
                 </li>
                 <li>Background in this Subject: i took itis 1213, 2214, that's it.</li>
                 <li>Primary Computer Platform: 2020 Macbook Air</li>
-                <li class="bold"> Courses I'm Taking & Why
+                <li class="bold"> Courses I'm Taking & Why</li>
                 <ul>
                     <li>LBST 2301 - Critical Thinking and Communications: Applied Engineering Ethics - I chose this
                         course
@@ -67,14 +54,8 @@
             </ul>
         </fieldset>
     </main>
-    <footer>
-        <a class="link_space" href="https://webpages.charlotte.edu/ehenriq3/">Charlotte.edu</a>
-        <a class="link_space" href="https://github.com/edwxrd7">Github</a>
-        <a class="link_space" href="https://github.com/edwxrd7/itis3135">Course Github</a>
-        <a class="link_space" href="https://www.freecodecamp.org/edwardh7">freeCodeCamp</a>
-        <a class="link_space" href="https://www.codecademy.com/profiles/css2918182977">Codeacademy</a>
-        <a class="link_space" href="https://www.linkedin.com/in/edward-henriquez-418b122aa/">LinkedIn</a>
-    </footer>
+    <div data-include="components/footer.html"></div>
+
     <p>Page Built by <a href="enigmatichamster.com/">Enigmatic Hamster Enterprises </a>&copy;2023</p>
     <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
         <img style="border:0;width:88px;height:31px"
@@ -86,8 +67,7 @@
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
-
-
+    <script src="scripts/include.js"></script>
 </body>
 
 </html>
