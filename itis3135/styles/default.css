@@ -56,7 +56,7 @@ form{
   color:rgb(255,235,205);
 }
 
-input, option, select{
+ option, select{
   border:none;
   color:rgb(255,235,205);
   background:linear-gradient(rgb(244, 120, 120), rgb(255,0,0), rgb(244,120,120));
@@ -65,19 +65,25 @@ input, option, select{
   margin-top: 10px;
 }
 
-::placeholder{
+.formholder::placeholder{
   color:rgb(255,235,205);
 }
 .red{
   color:red;
 }
+.red-input{
+  background:linear-gradient(rgb(244, 120, 120), rgb(255,0,0), rgb(244,120,120));
+  border:none;
+}
 .bor{
   border-bottom: 1px solid red;
 }
 #submit{
+  margin-top: 2rem;
   width:100px;
-  background: rgba(212, 6, 6, 0.685);
+  background: rgba(245, 6, 6, 0.885);
   font-weight:bold;
+  color:rgb(255,235,205)
 }
 /*below controls web eval*/
 .space2{
@@ -99,9 +105,53 @@ margin-top: 2rem;
     0 0 24px rgb(250,255,0),
     0 0 34px rgb(250, 255, 0);
   }
-  
-}
-a:hover{
+
+}a:hover{
   animation:pulsate 1.0s infinite alternate;
   color:yellow;
+}
+  /*making glowing text for firstsripts*/
+@keyframes pulsateRGB {
+  0%{
+   color: rgb(255, 117, 117);
+   text-shadow:
+   0 0 7px rgb(227, 13, 13),
+   0 0 14px rgb(227, 13, 13),
+   0 0 17px rgb(227, 13, 13),
+   0 0 24px rgb(227, 13, 13),
+   0 0 34px rgb(227, 13, 13);
+  }
+  25%{
+    color:pink;
+    text-shadow:
+    0 0 7px rgb(241, 89, 182),
+    0 0 14px rgb(241, 89, 182),
+    0 0 17px rgb(241, 89, 182),
+    0 0 24px rgb(241, 89, 182),
+    0 0 34px rgb(241, 89, 182);
+  }
+  50%{
+    color: rgb(0, 255, 251);
+    text-shadow:
+    0 0 7px rgb(0, 255, 251),
+    0 0 14px rgb(0, 255, 251),
+    0 0 17px rgb(0, 255, 251),
+    0 0 24px rgb(0, 255, 251),
+    0 0 34px rgb(0, 255, 251);
+  }
+  100%{
+    color: rgb(0, 255, 21);
+    text-shadow:
+    0 0 7px rgb(0, 255, 21),
+    0 0 14px rgb(0, 255, 21),
+    0 0 17px rgb(0, 255, 21),
+    0 0 24px rgb(0, 255, 21),
+    0 0 34px rgb(0, 255, 21);
+  }
+  
+}
+/*JS glow*/
+#gnameresponse{
+  animation:pulsateRGB 5.0s ease-in-out infinite;
+  color:white;
 }

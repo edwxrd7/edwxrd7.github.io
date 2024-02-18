@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Henriquez || ITIS3135 FirstScripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+
+</head>
+
+<body class="center">
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Scripts</h2>
+        <h3 id="date"></h3>
+        <script>
+            document.getElementById("date").innerHTML = "Date : " + Date();
+        </script>
+
+        <p>Whats your name?</p>
+        <input id="0feb18"><button type="button" onclick="nameFunction()">Submit</button>
+        <p id="feb18response"></p>
+        <p>How are you feeling today?</p>
+        <input id="1feb18"><button type="button" onclick="feelingToday()">Submit</button>
+        <p id="1feb18response"></p>
+        <p>Input you favorite number from 1-10!</p>
+        <input id="favoritenumber" type="number" min="0" max="10"><button type="button"
+            onclick="favoriteNumber()">Submit</button>
+        <p id="favoriteumberresponse"></p>
+
+        <p>Want to see your name in glowing letters???</p>
+        <input placeholder="try_it!!!" id="gname"><button type="button" onclick="gname()">Submit</button>
+        <p id="gnameresponse"></p>
+
+        <p>Debating on what Brand of headphones/what headphones to go with?? Let us choose for you!</p>
+        <button type="button" onclick="randomHeadphones()">Submit</button>
+        <p id="headphonesresponse"></p>
+
+        <p>If you had a pet hamster, what would you name it?</p>
+        <input id="hamstername"><button type="button" onclick="hamsterName()">Submit</button>
+        <p id="hamsterresponse"></p>
+        <p>Click below to get the name of 1 of 5 of the most popular pet hamster species!!!</p>
+        <button type="button" onclick="hamsterSpecies()">HAMSTER SPIECES!</button>
+
+        <script>
+            function hamsterSpecies() {
+                const x = ["Dward Roborovski (a very small breed)", "Campbels'Drarf Russian (very stubborn)",
+                    "Syrian (Golden) Hamster (very friendly)", "Dwarf Winter White Russian (white coat fur to help against predators in the wild!)", "Chinese Hamster (attention seeker!!)"];
+                alert(x[getRandomInt(5)]);
+            }
+            function hamsterName() {
+                let x = document.getElementById('hamstername').value;
+                let y;
+                if (isNaN(x)) {
+                    y = x + " is a beautiful name!! My hamster's name is cookie!"
+                } else {
+                    y = "invalid input bro."
+                }
+                document.getElementById("hamsterresponse").innerHTML = y;
+            }
+            function randomHeadphones() {
+                let x = ["Sony XM4 - personal favorties!", "Bose Headphones", "Apple Airpods",
+                    "Skull Crushers", "Sennheiser HD 800 S", "Audio Technica", "Walmart Brand, $1 wired earbuds..."];
+                alert("Hmm... lets go with: " + x[getRandomInt(7)] + "!")
+            }
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * max);
+            }
+            function gname() {
+                let y = document.getElementById('gname').value;
+                document.getElementById('gnameresponse').innerHTML = y;
+            }
+            function favoriteNumber() {
+                let z = ["no", "henagon", "digon", "trigon", "tetragon", "pentagon",
+                    "hexagon", "heptagon", "octagon", "enneagon", "decagon"];
+                let x = document.getElementById('favoritenumber').value;
+                let y;
+                if (isNaN(x) || x > 10) {
+                    y = "invalid input bro."
+                } else {
+                    y = "The name of the polygon with " + x + " sides is: " + z[x];
+                }
+                alert(y);
+            }
+            function nameFunction() {
+                let x = document.getElementById('0feb18').value;
+                let y;
+
+                if (isNaN(x) == true) {
+                    y = "Enigmatic Hamster Enterprises welcomes you, " + x + "!";
+                } else {
+                    y = "invalid input bud";
+                }
+                document.getElementById('feb18response').innerText = y;
+            }
+            function feelingToday() {
+                let x = document.getElementById('1feb18').value;
+                let y;
+                if (isNaN(x) == true) {
+                    y = "We're glad you are doing " + x + "!";
+                } else {
+                    y = "invalid input bud";
+                }
+                document.getElementById('1feb18response').innerHTML = y;
+            }
+        </script>
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <p>Page Built by <a href="enigmatichamster.com/">Enigmatic Hamster Enterprises </a> &copy;2023</p>
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border:0;width:88px;height:31px"
+            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!"></a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!"></a>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/include.js"></script>
+</body>
+
+</html>
