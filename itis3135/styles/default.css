@@ -155,3 +155,7 @@ margin-top: 2rem;
   animation:pulsateRGB 5.0s ease-in-out infinite;
   color:white;
 }
+.fs_space{
+  margin-left: .25rem;
+  margin-bottom: .5rem;
+}
