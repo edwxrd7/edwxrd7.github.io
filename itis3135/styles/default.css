@@ -1,10 +1,12 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 body{
   background:linear-gradient( rgb(4, 110, 0), rgb(17, 70, 9),rgb( 5, 110, 0));
-  color:rgb(255, 255, 255);
+  color:rgb(248, 240, 227);
 }
-*{
+#center-all{
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .bold{
   font-weight:bold;
@@ -20,7 +22,7 @@ a{
 .link_space{
   margin:0 5px;
 }
-li{
+#intro-spacing{
   text-align: justify;
   align-items: center;
 }
@@ -86,14 +88,44 @@ form{
   color:rgb(255,235,205)
 }
 /*below controls web eval*/
-.space2{
-margin-top: 2rem;
+#web-eval{
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  gap:70px;
+  max-width:1000px;
+  margin: auto;
+  padding:20px 20px;
 }
+#website-web-eval{
+  max-width: 250px;
+  height: 650px;
+  align-items: center;
+}
+#website-web-eval > #psum{
+margin-top: 0;
+}
+#website-web-eval > ul > li > h4{
+  margin-bottom: 0;
+  color:gold;
+}
+#website-web-eval > ul > li > p{
+  margin-top:0;
+}
+
+
 .yellow{
-  color:yellow;
+  color:gold;
 }
 .no_style{
-  list-style-type: none;
+  list-style:upper-roman;
+}
+.centering{
+  text-align: center;
+  align-content: center;
 }
 /*Making the hover pulsate*/
 @keyframes pulsate {

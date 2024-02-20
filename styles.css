@@ -1,10 +1,27 @@
+*{
+  box-sizing: border-box;
+}
 body {
-  background: rgb(170, 147, 124);
-  color: rgb(255, 255, 255);
+  background: rgb(77, 57, 37);
+  color: rgb(250, 223, 202);
   font-family: Tahoma;
 }
 p{
   font-size: 20px;
+}
+#pep{
+  margin-bottom: 50px;
+}
+div{
+  display: block;
+  width: 75%;
+  max-width: 350px;
+  align-content: center;
+  margin: auto;
+}
+iframe{
+  width:100%;
+  max-width: 350px;
 }
 .peppy {
   align: center;
