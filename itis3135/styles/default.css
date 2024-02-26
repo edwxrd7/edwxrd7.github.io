@@ -5,9 +5,19 @@ body{
   background:linear-gradient( rgb(4, 110, 0), rgb(17, 70, 9),rgb( 5, 110, 0));
   color:rgb(248, 240, 227);
 }
+main { 
+  max-width: 1200px; 
+  width: 90%; /* Adjust percentage based on design requirements */
+  margin: 0 auto; /* Centers the content horizontally */ 
+}
 #center-all{
   text-align: center;
 }
+#homeMargin{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* class to bold individual elements*/
 .bold{
   font-weight:bold;
 }
@@ -45,17 +55,30 @@ table{
   margin:auto;
   padding-bottom: 1rem;
 }
-form{
+
+/* form customization, need to fix*/
+.red-form{
   width:70vw;
   margin:0 auto;
   padding-bottom: 2rem;
+  font-size: large;
 }
 .jan28{
   display:block;
+  
 }
 #jan28{
   background:linear-gradient(rgb(69, 0, 0), rgba(136, 22, 22, 0.906),rgb(69, 0, 0));
   color:rgb(255,235,205);
+}
+.music-space{
+  margin-right:20px;;
+}
+#dropdown {
+  height: 20px;
+}
+#favChicken{
+  height:50px;
 }
 
  option, select{
@@ -66,9 +89,9 @@ form{
   margin-left:10px ;
   margin-top: 10px;
 }
-
 .formholder::placeholder{
   color:rgb(255,235,205);
+  text-align: center;
 }
 .red{
   color:red;
@@ -76,6 +99,10 @@ form{
 .red-input{
   background:linear-gradient(rgb(244, 120, 120), rgb(255,0,0), rgb(244,120,120));
   border:none;
+  border-radius:15px;;
+  color:antiquewhite;
+  height:20px;
+  text-align: center;
 }
 .bor{
   border-bottom: 1px solid red;
@@ -85,7 +112,18 @@ form{
   width:100px;
   background: rgba(245, 6, 6, 0.885);
   font-weight:bold;
-  color:rgb(255,235,205)
+  color:rgb(255,235,205);
+  border-radius: 15px;
+}
+/* nav customization*/
+#navSeperate{
+  border-top: solid rgba(0, 255, 21, .7) 1px;
+  width:500px;
+  margin:auto;
+  margin-top: 15px;
+}
+#navTwo{
+  margin-top: 10px;
 }
 /*below controls web eval*/
 #web-eval{
@@ -115,7 +153,10 @@ margin-top: 0;
 #website-web-eval > ul > li > p{
   margin-top:0;
 }
-
+.gimmiespace{
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
 
 .yellow{
   color:gold;
@@ -190,4 +231,72 @@ margin-top: 0;
 .fs_space{
   margin-left: .25rem;
   margin-bottom: .5rem;
+  border: none;
+  background: rgb(248, 240, 227);
+  color:black;
+}
+.feb18round{
+  border-radius: 10px;
+  background:rgb(248, 240, 227);
+  color:rgb(131, 70, 0);
+  font-size:medium
+}
+.feb18round::placeholder{
+  text-align: center;
+  color:black;
+}
+/*BYO Form*/
+#byo-form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: large;
+}
+#byo-form > label > input{
+  border-radius: 10px;
+  margin: 10px auto;
+}
+#bottom-buttons{
+  display:flex;
+  flex-direction: row;
+  gap:25px;
+    width: 100px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#classResponse > input{
+  display:flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+#byoLoadImg{
+  width:170px;
+  margin:auto;
+}
+
+
+
+
+
+
+
+/*Media Queries*/
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+  #colorbox {
+      background-color:yellow;
+  }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+  #colorbox {
+      background-color:orange;
+  }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+  #colorbox {
+      background-color:red;
+  }
 }
