@@ -6,32 +6,33 @@
     <title>Edward Henriquez || ITIS3135 BYO Intro</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
-<body class="center">
+<body class="center bodyFormat" id="bodyy">
     <div data-include="components/header.html"></div>
     <main>
         <h2>BYO Intro</h2>
         <h3>Time to BYO Intro page, please fill out the form below so we can create your own page!</h3>
         <form id="byo-form">
-            <label>Name: <input></label>
-            <label>Choose a Mascot: <input></label>
-            <label>Image upload: <input type="file" id="introFile" name="file" required></label>
+            <label>Name: <input id="resArea"></label>
+            <label>Choose a Mascot: <input id="resArea"></label>
+            <label>Image upload: <input id="resArea" type="file" id="introFile" name="file" required></label>
             <button type="button" id="byoLoadImg">Click here to load image!</button>
-            <label>Image Caption: <input></label>
-            <label>Personal Background: <input></label>
-            <label>Professional Background: <input></label>
-            <label>Academic Background: <input></label>
-            <label>Background in Web Development: <input></label>
-            <label>Primary Computer Platform: <input></label>
-            <label>Courses currently taking: <button type="button" onclick="addClass()" id="add-class">Click Here to add Classes!</button></label>
+            <label>Image Caption: <input id="resArea"></label>
+            <label>Personal Background: <input id="resArea"></label>
+            <label>Professional Background: <input id="resArea"></label>
+            <label>Academic Background: <input id="resArea"></label>
+            <label>Background in Web Development: <input id="resArea"></label>
+            <label>Primary Computer Platform: <input id="resArea"></label>
+            <label>Courses currently taking: <button id="resArea" type="button" onclick="addClass()" id="add-class">Click Here to add Classes!</button></label>
             <label id="classResponse"></label> 
-            <label>Funny fact: <input></label>
-            <label>Anything Else: <input></label>
+            <label>Funny fact: <input id="resArea"></label>
+            <label>Anything Else: <input id="resArea"></label>
             <label>I understand that what is on this page is not password protected and 
                 I will not put anything here that I don’t want publicly available. <input type="checkbox"></label>
             <div id="bottom-buttons">
-            <input type="submit" value="Submit">                
-            <input type="reset" value="Reset" onclick="resetForm()">
+            <input id="resArea" type="submit" value="Submit">                
+            <input id="resArea" type="reset" value="Reset" onclick="resetForm()">
             </div>
+            <button style="width: 200px; margin: auto;" id="resArea" type="button" onclick="removeF()">If the green background bothers you, click here!</button>
         </form>
     </main>
     <div data-include="components/footer.html"></div>

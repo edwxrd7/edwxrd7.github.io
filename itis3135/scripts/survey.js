@@ -14,3 +14,16 @@ function addClass() {
     const imageUrl = URL.createObjectURL(image);
     document.getElementById('loadImage').innerHTML = text;
   }
+  function removeF(){
+    var body = document.getElementById('bodyy');
+    var resArea = document.querySelectorAll('[id^="resArea"]')
+
+    body.classList.remove('bodyFormat');
+    body.classList.add('darkMode');
+
+    resArea.forEach(function(resArea) {
+        resArea.classList.add('darkModeAdd');
+    });
+    var img = document.getElementById('byoLoadImg');
+    img.classList.add('darkModeAdd');
+  }
