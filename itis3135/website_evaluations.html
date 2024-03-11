@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Henriquez || ITIS3135 Website Evaluations</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link id="styless" rel="stylesheet" href="styles/default.css">
 </head>
 
 <body class="bodyFormat">
+    <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
     <div data-include="components/header.html"></div>
     <main>
         <h2 id="center-all">Website Evaluations</h2>
@@ -67,19 +67,11 @@
             </fieldset>
         </section>
     </main>
-    <div data-include="components/footer.html"></div>
+    
     <div id="center-all">
-    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px"
-            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!"></a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img id="center-all" style="border:0;width:88px;height:31px;" src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!"></a>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
+        <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
+    <script src="scripts/css-toggle.js"></script>
     </div>
 </body>
 

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" id="center-all">
+    <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Henriquez || ITIS3135 Homepage</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link id="styless" rel="stylesheet" href="styles/default.css">
 </head>
 <body class="center bodyFormat">
     <div data-include="components/header.html"></div>
@@ -29,6 +30,6 @@
                  document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
          </script>
          <script src="scripts/include.js"></script>
-       
+         <script src="scripts/css-toggle.js"></script>
 </body>
 </html>
