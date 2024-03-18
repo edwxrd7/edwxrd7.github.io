@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="center-all">
+<html class="background-color" lang="en" id="center-all">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <body class="center bodyFormat" id="bodyy">
     <div data-include="components/header.html"></div>
     <main>
-        <form id="byo-form">
+        <form id="byo-form" style="font-size: larger;">
             <h2>BYO Intro</h2>
             <h3>Time to BYO Intro page, please fill out the form below so we can create your own page!</h3>
             <label>Name: <input id="byo-name"></label>
@@ -36,28 +36,18 @@
             <label>I understand that what is on this page is not password protected and
                 I will not put anything here that I don’t want publicly available.  <input type="checkbox"></label>
             <div id="bottom-buttons">
-                <input type="button" value="Submit" id="submitButton">
-                <input id="resArea" type="reset" value="Reset" onclick="resetForm()">
+                <input  type="button" value="Submit" id="submitButton">
+                <input  type="reset" value="Reset" onclick="resetForm()">
             </div>
         </form>
         <fieldset id="displayForm"
             style="margin-top:20px;"></fieldset>
 
-        <button id="resArea" style="width: 200px; margin-top:10px; margin-bottom: 10px;" class="resArea" type="button"
+        <button id="resArea" style="width: 200px; margin-bottom: 20px;" class="resArea" type="button"
             onclick="turnDark()">If
             the green background bothers you, click here!</button>
     </main>
     <div data-include="components/footer.html"></div>
-    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px"
-            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!"></a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!"></a>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
     <script src="scripts/include.js"></script>
     <script src="scripts/survey.js"></script>
     <script src="scripts/css-toggle.js"></script>

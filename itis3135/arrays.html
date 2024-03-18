@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" id="center-all">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Henriquez || ITIS3135 Arrays</title>
+    <link id="styless" rel="stylesheet" href="styles/default.css">  
+</head>
+
+<body class="bodyFormat background-color">
+    <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
+    <div data-include="components/header.html"></div>
+    <main id="homeMargin">
+        <h2>Arrays!</h2>
+        <h3 style="color: #99DDC8">Click below!</h3>
+        <button class="jsArray" type="button" id="addSalary" onclick="addSalary()">Add A Person</button>
+        <div id="addSalaryInput"></div>
+        <p id="aaa"></p>
+
+        <button class="jsArray" type="button" id="modifySalaryBtn" onclick="modifySalary()">Modify Someone's Salary</button>
+        <div id="modifySalary"></div>
+        <p id="bbb"></p>
+
+        <button class="jsArray" type="button" id="displayResult" onclick="displayResults()">Display Results</button>
+        <div id="resultDiv"></div>
+        <p></p>
+
+        <button class="jsArray" type="button" id="displayTableBtn" onclick="displaySalary()">Display Results in a Table</button>
+        <table id="tableDiv">
+            <thead>
+                <tr id="tableR" class="tableR">
+                </tr>
+            </thead>
+        </table>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/css-toggle.js"></script>
+    <script src="scripts/arrays.js"></script>
+
+</body>
+
+</html>

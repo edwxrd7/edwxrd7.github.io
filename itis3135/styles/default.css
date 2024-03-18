@@ -1,15 +1,31 @@
 * {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+.background-color{
+  background: linear-gradient(to bottom,  #166236 ,#69a26c,#166236);
+}
 .bodyFormat {
-  background: linear-gradient(rgb(4, 110, 0), rgb(17, 70, 9), rgb(5, 110, 0));
-  color: rgb(248, 240, 227);
+  /*background: linear-gradient(rgb(4, 110, 0), rgb(17, 70, 9), rgb(5, 110, 0));
+  */
+  color: rgb(248, 240, 227)
+}
+/*ChatGPT code that helps with weird banding issue with background color*/
+.background-color::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( #166236 ,#69a26c,#166236);
+  opacity: 0.1; /* Adjust opacity as needed */
+  pointer-events: none;
 }
 
 .darkMode {
   background: linear-gradient(rgb(81, 80, 80), rgb(31, 30, 30), rgb(81, 80, 80));
   color: rgb(248, 240, 227);
+  margin:0;
 }
 
 .darkModeAdd {
@@ -22,12 +38,15 @@ main {
   max-width: 1200px;
   width: 90%;
   /* Adjust percentage based on design requirements */
-  margin: 0 auto;
+  margin:0 auto;
   /* Centers the content horizontally */
 }
+
+
+/* toggle button for css*/
 #toggle-css{
   display: flex;
-  background: rgb(3, 168, 133);
+  background: rgb(228, 3, 3);
   border-radius: 10px;
   color:rgb(248, 240, 227);
 }
@@ -73,10 +92,12 @@ fieldset {
   border-radius: 9px;
 }
 
-table th,
-td {
-  border: 1px solid rgba(0, 255, 0, 0.631);
 
+.border-green > *{
+  border: 1px solid rgba(0, 255, 0, 0.631);
+}
+.border-greenn > td {
+  border: 1px solid rgba(0, 255, 0, 0.631);
 }
 
 ol li {
@@ -120,8 +141,7 @@ table {
   height: 50px;
 }
 
-option,
-select {
+.red-select {
   border: none;
   color: rgb(255, 235, 205);
   background: linear-gradient(rgb(244, 120, 120), rgb(255, 0, 0), rgb(244, 120, 120));
@@ -230,9 +250,9 @@ select {
   100% {
     text-shadow:
       0 0 7px rgb(250, 255, 0),
-      0 0 14px rgb(251, 255, 0),
+      0 0 14px #FFC107,
       0 0 17px rgb(250, 255, 0),
-      0 0 24px rgb(250, 255, 0),
+      0 0 24px #FFC107,
       0 0 34px rgb(250, 255, 0);
   }
 
@@ -291,6 +311,11 @@ a:hover {
 #gnameresponse {
   animation: pulsateRGB 5.0s ease-in-out infinite;
   color: white;
+} 
+/*alterante use for glow*/
+.glowy{
+  animation: pulsateRGB 5.0s ease-in-out infinite;
+  color: white; 
 }
 
 .fs_space {
@@ -328,10 +353,12 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  width: 100px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#bottom-buttons > input {
+  font-size: medium;
 }
 #classResponse>input {
   display: flex;
@@ -341,6 +368,10 @@ a:hover {
 .byoLoadImg {
   max-width: 170px;
   margin: auto;
+}
+#byo-form > label > input{
+  font-size: medium;
+  background-color: rgb(248, 240, 227);
 }
 
 /*Calculator CSS*/
@@ -411,6 +442,20 @@ a:hover {
   grid-row: 2 / span 4;
 }
 
+
+
+/*CSS for JS ARRAYS!*/
+.jsArray{
+  border-radius: 10px;
+  background-color: rgb(248, 240, 227);
+  font-size: large;
+}
+.jsArrInputs{
+  font-size: large;
+  border-radius: 10px;
+  background-color: #166236;
+  color:rgb(248, 240, 227);
+}
 
 /*Media Queries*/
 /* Rule Overrides For Laptops / Small Screens */
