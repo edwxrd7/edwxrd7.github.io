@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carscene</title>
+    <style>
+        /* Embedded Stylesheet */
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #49392C;
+            /* Light gray background */
+            color: #35CE8D;
+            font-size: 20px;;
+            /* Dark gray text */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #49392C;
+            /* Dark blue header */
+            color: #35CE8D;
+            /* White text */
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #CCE6F4;
+        }
+
+        @keyframes pulsate {
+            100% {
+                text-shadow:
+                    0 0 7px #00f2ff,
+                    0 0 14px #00f2ff,
+                    0 0 17px #00f2ff,
+                    0 0 24px #00f2ff,
+                    0 0 34px #00f2ff;
+            }
+
+        }
+
+        a:hover {
+            animation: pulsate 1.0s infinite alternate;
+            color: #00f2ff;
+        }
+        
+        nav {
+            border:1px solid #CCE6F4;
+            /* Slightly lighter blue nav background */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #CCE6F4;
+            /* White text for links */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            /* Underline on hover */
+        }
+
+        section {
+            display: none;
+            /* Hide all sections by default */
+            padding: 20px;
+        }
+
+        section.active {
+            display: block;
+            /* Display active section */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        figure {
+            margin: 0px 20px;
+            text-align: center;
+        }
+
+        figcaption {
+            font-style: italic;
+        }
+
+        .center-all {
+            text-align: center;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgt {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        #album > img {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        video {
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+
+        #img-gap {
+            gap: 20px;
+        }
+
+        .text-div {
+            margin: auto 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Carscene</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about-me">About me</a>
+        <a href="#when">When</a>
+        <a href="#where">Where</a>
+        <a href="#why">Why</a>
+        <a href="#how">How</a>
+        <a href="#ai">A.I.</a>
+    </nav>
+    <main>
+        <section id="home" class="active">
+            <h2>Home</h2>
+            <h3>My Hobby</h3>
+            <div class="img">
+                <figure>
+                    <img loading="lazy" src="images/rede92.JPG" alt="red bmw">
+                    <figcaption>Image of a BMW e90 taken by me at a car event</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Cherry Red BMW E90" loading="lazy" src="images/closeupe92.JPG">
+                    <figcaption>Close up of the BMW e90</figcaption>
+                </figure>
+            </div>
+            <div class="text-div">
+                <p>My hobby is the carscene! The fascinating part about this
+                    is the endless amount of ways people can modify their car, which is the highlight of
+                    the streetscene! As cliché as it may sound, you are only limited by your creativity here! </p>
+            </div>
+        </section>
+
+        <section id="when">
+            <h2>When</h2>
+            <h3>When does this take place?</h3>
+            <div class="img">
+                <div>
+                    <figure>
+                        <img alt="Placeholder image of a modified dodge charger at night" id="videoPlaceholderTwo"
+                            src="images/chargerplaceholder.png" onclick="loadVideoTwo()">
+                        <figcaption id="videoCapTwo">Click the photo above to play the video!</figcaption>
+                    </figure>
+                </div>
+                <figure>
+                    <img alt="White Honda NSX" loading="lazy" style="width:299px;" src="images/nsx.JPG">
+                    <figcaption>Honda NSX at Cars & Coffe at 8am!</figcaption>
+                </figure>
+            </div>
+            <div class="text-div">
+                <p>The carscene has no set time! If you see a group of modified cars
+                    together then thats where the car meet is happening! Of cousre
+                    some meets are private, for example a meet between friends,
+                    but then there are others where the whole city is invited!Just keep an eye out on
+                    social media pages to see what's happening, or connect with others who share the same passion for
+                    cars!
+                </p>
+            </div>
+
+        </section>
+
+        <section id="where">
+            <h2>Where</h2>
+            <h3>Where does this take place?</h3>
+            <div id="contain">
+                <figure>
+                    <img alt="placeholder image of a BMW M4 Comp" loading="lazy" id="videoPlaceholder"
+                        src="images/m4placeholder.png" onclick="loadVideo()">
+                    <figcaption id="videoCap">Click the photo above to play the video!</figcaption>
+                </figure>
+            </div>
+            <div class="text-div">
+                <p>This can take place all over the city! If you prefer more organized events,
+                    you have to watch out for the big organization names! Some popular
+                    organizations here in Charlotte NC and the surrounding areas include Cars & Coffee,
+                    CLT Streetscene on IG, and many other events made public by car dealerships!
+                    For the pop up and chill meets, you'd have to have to pay attention to the
+                    many car clubs here in the area!
+                </p>
+            </div>
+
+        </section>
+
+        <section id="about-me">
+            <h2>About me</h2>
+            <h3>A little about me</h3>
+            <div style="text-align: center;">
+                <figure class="imgt">
+                    <img alt="My car next to a christmas tree" loading="lazy" src="images/treem.jpg">
+                    <img alt="Image of 350z (friend) and my car(E36)" loading="lazy" src="images/menbro.JPG">
+                </figure>
+
+                <figure style="margin-top: 20px;"><img alt="My car (E36)" src="images/me.JPG">
+                    <figcaption>My car, the red 350z is a friends car!</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="text-div">
+                <p>I chose the carscene because its one of my favorite hobbies
+                    I particpate in. I own a 1998 BMW 323I Convertible, or E36 for short, and every now and then I'll
+                    turn some heads.
+                    But what I enjoy the most
+                    is meeting other E36 owners! My car model is not common, and the
+                    history of the car is what makes it stand out to some (IYKYK). This
+                    specific car model, but a higher trim, has been used in
+                    official races done by BMW, and nowadays is commonly used in drifting
+                    because of its surreal balance (for a old car).
+                </p>
+                <p>Another reason why I participate in this hobby is because
+                    I love seeing everyone's build! A build refers to someones modified car.</p>
+                <p><strong>Every photo and video on this webpage is taken by me, on my iphone 14 pro max!</strong></p>
+            </div>
+        </section>
+
+        <section id="how">
+            <h2>How</h2>
+            <h3>How did the carscene come to be?</h3>
+            <div style="text-align: center;">
+                <figure class="imgt">
+                    <img alt="Image of a indoor car event, people and cars everywhere" loading="lazy"
+                        src="images/carevent.JPG">
+                    <img alt="Image of a carmeet at night, lots of people present" src="images/nightmeet.jpg">
+                </figure>
+                <figure style="margin-top: 20px;"><img alt="Image of a supra MKIV and a R34" loading="lazy"
+                        src="images/suprar34.JPG">
+                    <figcaption>Past events ive been at!</figcaption>
+                </figure>
+            </div>
+            <div class="text-div">
+                <p>Car shows, meets, and cruises became popular venues for car enthusiasts to display their vehicles,
+                    share knowledge, and socialize with like-minded individuals.
+                    These gatherings fostered a sense of community and camaraderie among car enthusiasts. The carscene
+                    comes from car culture, and this has been heavily influenced by media representations, including
+                    movies,
+                    television shows, and music. Iconic cars and characters from films like "The Fast and the Furious"
+                    and
+                    TV shows like "Top Gear"
+                    have left a lasting impact on automotive enthusiasts worldwide.</p>
+            </div>
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+            <h3>Why I chose the carscene</h3>
+            <div style="text-align: center;">
+                <figure class="imgt">
+                    <img alt="My car with similar models" loading="lazy" src="images/bros1.jpg">
+                    <img alt="My car with other similar models" loading="lazy" src="images/bros2.JPG">
+                </figure>
+
+                <figure style="margin-top: 20px;"><img alt="My car with other similar cars" loading="lazy"
+                        src="images/bros3.JPG">
+                    <figcaption>People I have met that have same car as me!</figcaption>
+                </figure>
+
+            </div>
+            <div class="text-div">
+                <p>Growing up, I was always around my grandfather, who was a mechanic, which meant I was always around
+                    cars, and
+                    This is where my love for cars came from.
+                    Just before graduating high school, I got my first car (E36) and started diving into mechanics by
+                    working on small projects on my car.
+                    At the same time, Because of my car's
+                    history/popularity,
+                    I would casually run into car people and little by little I made friends with the same intrest of
+                    cars,
+                    and I got into the carscene because of this!
+                </p>
+            </div>
+        </section>
+
+        <section id="ai">
+            <h2>A.I. Prompts</h2>
+            <h3>Where AI was used</h3>
+            <figure>
+                <img alt="A.I generated image" loading="lazy" src="images/Unknown.jpg">
+                <figcaption>Underground racing at night</figcaption>
+            </figure>
+            <div class="text-div">
+                <p>Below is every prompt I asked A.I.</p>
+                <p><strong>ChatGPT</strong></p>
+                <ul>
+                    <li>hey chat! Im doing a project for my coding class and I have to use YOU to create a webpage! Im using HTML. </li>
+                    <li>thank you chat! I also have another question, how were you able to make all pages load on one page?</li>
+                    <li>my background color is #b9a086, what's a good color for my font?</li>
+                    <li>can you provide the color code for the bmw blue?</li>
+                    <li>I want to use a video I took from my phone, how would I do that?</li>
+                    <li>hey chat, for this project, can you provide a brief summary of how the car street scene came to be? - no not that street scene, I meant car culture!</li>
+                    <li>how do I make it so the video loads only when they click to that specific section? - what if I have multiple videos?</li>
+                    <li>can you point out errors in my code?</li>
+                    <li>thank you chat! I also have another question, how were you able to make all pages load on one page?</li>
+                    <li>This is my code that you helped me build, thx btw! Also are there any grammatical errors?</li>
+                </ul>
+                <p><strong>DeepAI</strong></p>
+                <ul>
+                    <li>Underground racing at night</li>
+                </ul>
+                <p>This page is the only page with an A.I. generated image. The prompt is the caption.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="center-all">
+        <p class="center-all">Page Built by <a href="enigmatichamster.com/">Edward Henriquez Enterprises</a>, <a
+                href="https://www.freecodecamp.org/certification/edwardh7/responsive-web-design">Certified in RWD</a>
+            &copy;2023</p>
+        <p>"Amplify Your World"</p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px"
+                src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!"></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"></a>
+        <a href="https://wave.webaim.org/report#/" id="validation_link_wave">
+            <img style="border:0;width:88px;height:31px;" src="images/button_validation_wcag.png" alt="WAVE Web Accessibility Evaluation Tool"></a>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            document.getElementById("validation_link_wave").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+        </script>
+    </footer>
+    <script>
+        function loadVideo() {
+            // Get a reference to the video placeholder element
+            var videoPlaceholder = document.getElementById('videoPlaceholder');
+
+            // Create a new video element
+            var videoElement = document.createElement('video');
+
+            // Set attributes for the video element (src, controls, etc.)
+            videoElement.setAttribute('src', 'videos/M4Comp.mp4');
+            videoElement.setAttribute('controls', 'controls');
+
+            //Caption
+            document.getElementById('videoCap').innerText = "'24 BMW M4 Competition at a UNCC meet!"
+            // Replace the placeholder with the video element
+            videoPlaceholder.parentNode.replaceChild(videoElement, videoPlaceholder);
+        }
+        function loadVideoTwo() {
+            // Get a reference to the video placeholder element
+            var videoPlaceholder = document.getElementById('videoPlaceholderTwo');
+
+            // Create a new video element
+            var videoElement = document.createElement('video');
+
+            // Set attributes for the video element (src, controls, etc.)
+            videoElement.setAttribute('src', 'videos/charger.mp4');
+            videoElement.setAttribute('controls', 'controls');
+
+            //Caption
+            document.getElementById('videoCapTwo').innerText = "Modified Dodge Charger at a meet at 8pm!";
+            // Replace the placeholder with the video element
+            videoPlaceholder.parentNode.replaceChild(videoElement, videoPlaceholder);
+        }
+        // JavaScript for toggling active section
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === targetId) {
+                        section.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
