@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="background-color" lang="en" id="center-all">
+<html class="background-color center-all" lang="en">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <body class="center bodyFormat" id="bodyy">
     <div data-include="components/header.html"></div>
     <main>
-        <form id="byo-form" style="font-size: larger;">
+        <form class="byo-form"style="font-size: larger;">
             <h2>BYO Intro</h2>
             <h3>Time to BYO Intro page, please fill out the form below so we can create your own page!</h3>
             <label>Name: <input id="byo-name"></label>
@@ -30,12 +30,12 @@
             <label>Primary Computer Platform: <input id="byo-comp"></label>
             <label id="byo-courses">Courses currently taking: <button id="resArea" type="button" onclick="addClass()"
                     id="add-class">Click Here to add Classes!</button></label>
-            <label id="classResponse"></label>
+            <label class="classResponse" id="classResponse"></label>
             <label>Funny fact: <input id="byo-fact"></label>
             <label>Anything Else: <input id="byo-anything"></label>
             <label>I understand that what is on this page is not password protected and
                 I will not put anything here that I don’t want publicly available.  <input type="checkbox"></label>
-            <div id="bottom-buttons">
+            <div class="bottom-buttons">
                 <input  type="button" value="Submit" id="submitButton">
                 <input  type="reset" value="Reset" onclick="resetForm()">
             </div>

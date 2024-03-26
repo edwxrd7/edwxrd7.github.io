@@ -12,7 +12,7 @@ p{
 #pep{
   margin-bottom: 50px;
 }
-div{
+.spotify{
   display: block;
   width: 75%;
   max-width: 350px;
@@ -33,7 +33,7 @@ legend{
 }
 .teeth {
 border:none;
-font-size: 10px;
+margin:auto 10%;
 }
 @keyframes pulsate {
   100%{

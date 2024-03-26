@@ -8,11 +8,12 @@
     <style>
         /* Embedded Stylesheet */
         body {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #49392C;
             /* Light gray background */
             color: #35CE8D;
-            font-size: 20px;;
+            font-size: 20px;
+            ;
             /* Dark gray text */
             margin: 0;
             padding: 0;
@@ -48,9 +49,9 @@
             animation: pulsate 1.0s infinite alternate;
             color: #00f2ff;
         }
-        
+
         nav {
-            border:1px solid #CCE6F4;
+            border: 1px solid #CCE6F4;
             /* Slightly lighter blue nav background */
             padding: 10px;
             text-align: center;
@@ -128,7 +129,7 @@
             border: 1px solid black;
         }
 
-        #album > img {
+        #album>img {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -196,7 +197,7 @@
             <div class="img">
                 <div>
                     <figure>
-                        <img alt="Placeholder image of a modified dodge charger at night" id="videoPlaceholderTwo"
+                        <img tabindex="0" alt="Placeholder image of a modified dodge charger at night" id="videoPlaceholderTwo"
                             src="images/chargerplaceholder.png" onclick="loadVideoTwo()">
                         <figcaption id="videoCapTwo">Click the photo above to play the video!</figcaption>
                     </figure>
@@ -215,6 +216,13 @@
                     cars!
                 </p>
             </div>
+            <script>        
+            document.addEventListener('keydown', function (event) {
+                if (event.keyCode === 16) {
+                    // Call your function to play video
+                    loadVideoTwo();
+                }
+            });</script>
 
         </section>
 
@@ -224,7 +232,7 @@
             <div id="contain">
                 <figure>
                     <img alt="placeholder image of a BMW M4 Comp" loading="lazy" id="videoPlaceholder"
-                        src="images/m4placeholder.png" onclick="loadVideo()">
+                        src="images/m4placeholder.png" tabindex="0" onclick="loadVideo()">
                     <figcaption id="videoCap">Click the photo above to play the video!</figcaption>
                 </figure>
             </div>
@@ -237,7 +245,12 @@
                     many car clubs here in the area!
                 </p>
             </div>
-
+            <script>        document.addEventListener('keydown', function (event) {
+                if (event.keyCode === 13) {
+                    // Call your function to play video
+                    loadVideo();
+                }
+            });</script>
         </section>
 
         <section id="about-me">
@@ -246,7 +259,7 @@
             <div style="text-align: center;">
                 <figure class="imgt">
                     <img alt="My car next to a christmas tree" loading="lazy" src="images/treem.jpg">
-                    <img alt="Image of 350z (friend) and my car(E36)" loading="lazy" src="images/menbro.JPG">
+                    <img alt="BMW E36 & Nissan 350z" loading="lazy" src="images/menbro.JPG">
                 </figure>
 
                 <figure style="margin-top: 20px;"><img alt="My car (E36)" src="images/me.JPG">
@@ -277,11 +290,10 @@
             <h3>How did the carscene come to be?</h3>
             <div style="text-align: center;">
                 <figure class="imgt">
-                    <img alt="Image of a indoor car event, people and cars everywhere" loading="lazy"
-                        src="images/carevent.JPG">
-                    <img alt="Image of a carmeet at night, lots of people present" src="images/nightmeet.jpg">
+                    <img alt="Indoor car event" loading="lazy" src="images/carevent.JPG">
+                    <img alt="Nighttime outdoor car event" src="images/nightmeet.jpg">
                 </figure>
-                <figure style="margin-top: 20px;"><img alt="Image of a supra MKIV and a R34" loading="lazy"
+                <figure style="margin-top: 20px;"><img alt="MK4 Supra & Nissan R34" loading="lazy"
                         src="images/suprar34.JPG">
                     <figcaption>Past events ive been at!</figcaption>
                 </figure>
@@ -333,22 +345,27 @@
             <h2>A.I. Prompts</h2>
             <h3>Where AI was used</h3>
             <figure>
-                <img alt="A.I generated image" loading="lazy" src="images/Unknown.jpg">
+                <img alt="Two cars racing" loading="lazy" src="images/Unknown.jpg">
                 <figcaption>Underground racing at night</figcaption>
             </figure>
             <div class="text-div">
                 <p>Below is every prompt I asked A.I.</p>
                 <p><strong>ChatGPT</strong></p>
                 <ul>
-                    <li>hey chat! Im doing a project for my coding class and I have to use YOU to create a webpage! Im using HTML. </li>
-                    <li>thank you chat! I also have another question, how were you able to make all pages load on one page?</li>
+                    <li>hey chat! Im doing a project for my coding class and I have to use YOU to create a webpage! Im
+                        using HTML. </li>
+                    <li>thank you chat! I also have another question, how were you able to make all pages load on one
+                        page?</li>
                     <li>my background color is #b9a086, what's a good color for my font?</li>
                     <li>can you provide the color code for the bmw blue?</li>
                     <li>I want to use a video I took from my phone, how would I do that?</li>
-                    <li>hey chat, for this project, can you provide a brief summary of how the car street scene came to be? - no not that street scene, I meant car culture!</li>
-                    <li>how do I make it so the video loads only when they click to that specific section? - what if I have multiple videos?</li>
+                    <li>hey chat, for this project, can you provide a brief summary of how the car street scene came to
+                        be? - no not that street scene, I meant car culture!</li>
+                    <li>how do I make it so the video loads only when they click to that specific section? - what if I
+                        have multiple videos?</li>
                     <li>can you point out errors in my code?</li>
-                    <li>thank you chat! I also have another question, how were you able to make all pages load on one page?</li>
+                    <li>thank you chat! I also have another question, how were you able to make all pages load on one
+                        page?</li>
                     <li>This is my code that you helped me build, thx btw! Also are there any grammatical errors?</li>
                 </ul>
                 <p><strong>DeepAI</strong></p>
@@ -361,10 +378,10 @@
 
     </main>
     <footer class="center-all">
-        <p class="center-all">Page Built by <a href="enigmatichamster.com/">Edward Henriquez Enterprises</a>, <a
+        <p class="center-all">Page Built by <a href="/edwxrd7.githib.io/itis3135/enigmatichamster.com/">Edward Henriquez Enterprises</a>, <a
                 href="https://www.freecodecamp.org/certification/edwardh7/responsive-web-design">Certified in RWD</a>
             &copy;2023</p>
-        <p>"Amplify Your World"</p>
+        
         <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
             <img style="border:0;width:88px;height:31px"
                 src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!"></a>
@@ -372,13 +389,15 @@
             <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
                 alt="Valid CSS!"></a>
         <a href="https://wave.webaim.org/report#/" id="validation_link_wave">
-            <img style="border:0;width:88px;height:31px;" src="images/button_validation_wcag.png" alt="WAVE Web Accessibility Evaluation Tool"></a>
+            <img style="border:0;width:88px;height:31px;" src="images/button_validation_wcag.png"
+                alt="WAVE Web Accessibility Evaluation Tool"></a> 
 
         <script>
             document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-            document.getElementById("validation_link_wave").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+            document.getElementById("validation_link_wave").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
         </script>
+        <p>"Amplify Your World"</p>
     </footer>
     <script>
         function loadVideo() {

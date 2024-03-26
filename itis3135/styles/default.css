@@ -1,519 +1,526 @@
-* {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* Global Styles */
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.background-color{
-  background: linear-gradient(to bottom,  #166236 ,#69a26c,#166236);
+
+/* Background Color */
+.background-color {
+    background: linear-gradient(to bottom, #166236, #69a26c, #166236);
 }
+
+/* Body Format */
 .bodyFormat {
-  /*background: linear-gradient(rgb(4, 110, 0), rgb(17, 70, 9), rgb(5, 110, 0));
-  */
-  color: rgb(248, 240, 227)
+    color: rgb(240, 230, 214);
 }
-/*ChatGPT code that helps with weird banding issue with background color*/
+
+/* ChatGPT code for background color */
 .background-color::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient( #166236 ,#69a26c,#166236);
-  opacity: 0.1; /* Adjust opacity as needed */
-  pointer-events: none;
+    background: linear-gradient(#166236, #69a26c, #166236);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.darkMode {
-  background: linear-gradient(rgb(81, 80, 80), rgb(31, 30, 30), rgb(81, 80, 80));
-  color: rgb(248, 240, 227);
-  margin:0;
-}
-
+/* Dark Mode */
+.darkMode,
 .darkModeAdd {
-  background: linear-gradient(rgb(81, 80, 80), rgb(31, 30, 30), rgb(81, 80, 80));
-  border-color: none;
-  color: rgb(248, 240, 227);
+    background: linear-gradient(rgb(81, 80, 80), rgb(31, 30, 30), rgb(81, 80, 80));
+    color: rgb(248, 240, 227);
+    margin: 0;
 }
 
+/* Main Content */
 main {
-  max-width: 1200px;
-  width: 90%;
-  /* Adjust percentage based on design requirements */
-  margin:0 auto;
-  /* Centers the content horizontally */
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
 }
 
-
-/* toggle button for css*/
-#toggle-css{
-  display: flex;
-  background: rgb(228, 3, 3);
-  border-radius: 10px;
-  color:rgb(248, 240, 227);
-}
-#center-all {
-  text-align: center;
+/* Toggle Button */
+.toggle-css {
+    background: rgb(255, 217, 0);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
 }
 
-#homeMargin {
-  margin-top: 50px;
-  margin-bottom: 50px;
+/* Center Alignment */
+.center-all {
+    text-align: center;
 }
 
-/* class to bold individual elements*/
+/* Margin for Home */
+.homeMargin {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* Bold Text */
 .bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
+/* Image Styling */
 img {
-  width: 100%;
-  max-width: 350px;
+    max-width: 350px;
+    width: 100%;
 }
 
+/* Anchor Links */
 a {
-  color: rgb(4, 242, 0);
-  text-decoration: none;
+    color: rgb(4, 242, 0);
+    text-decoration: none;
 }
 
+/* Spacing for Links */
 .link_space {
-  margin: 0 5px;
+    margin: 0 5px;
 }
 
-#intro-spacing {
-  text-align: justify;
-  align-items: center;
+/* Spacing for Intro */
+.intro-spacing {
+    align-items: center;
+    text-align: justify;
 }
 
+/* Fieldset */
 fieldset {
-border:none;
+    border: none;
 }
 
+/* Image Border */
 .img {
-  box-shadow: 0 0 3px 3px rgb(9, 255, 0);
-  border-radius: 9px;
+    border-radius: 9px;
+    box-shadow: 0 0 3px 3px rgb(9, 255, 0);
 }
 
-
-.border-green > *{
-  border: 1px solid rgba(0, 255, 0, 0.631);
-}
-.border-greenn > td {
-  border: 1px solid rgba(0, 255, 0, 0.631);
+/* Green Border */
+.border-green>*,
+.border-greenn>td {
+    border: 1px solid rgba(0, 255, 0, 0.631);
 }
 
+/* Ordered List */
 ol li {
-  text-align: center;
-  list-style-position: inside;
+    list-style-position: inside;
+    text-align: center;
 }
 
+/* Table Styling */
 table {
-  margin: auto;
-  padding-bottom: 1rem;
+    margin: auto;
+    padding-bottom: 1rem;
 }
 
-/* form customization, need to fix*/
+/* Form Customization */
 .red-form {
-  width: 70vw;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-  font-size: large;
+    font-size: large;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 70vw;
 }
 
+/* January 28 Class */
 .jan28 {
-  display: block;
-
+    display: block;
 }
 
-#jan28 {
-  background: linear-gradient(rgb(69, 0, 0), rgba(136, 22, 22, 0.906), rgb(69, 0, 0));
-  color: rgb(255, 235, 205);
-}
-
+/* Music Space */
 .music-space {
-  margin-right: 20px;
-  ;
+    margin-right: 20px;
 }
 
-#dropdown {
-  height: 20px;
+/* Dropdown Height */
+.dropdown {
+    height: 20px;
 }
 
-#favChicken {
-  height: 50px;
+/* Favorite Chicken Height */
+.favChicken {
+    height: 50px;
 }
 
+/* Red Select */
 .red-select {
-  border: none;
-  color: rgb(255, 235, 205);
-  background: linear-gradient(rgb(244, 120, 120), rgb(255, 0, 0), rgb(244, 120, 120));
-  border-radius: 15px;
-  margin-left: 10px;
-  margin-top: 10px;
+    background: linear-gradient(rgb(244, 120, 120), rgb(255, 0, 0), rgb(244, 120, 120));
+    border: none;
+    border-radius: 15px;
+    color: rgb(255, 235, 205);
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
+/* Placeholder in Form */
 .formholder::placeholder {
-  color: rgb(255, 235, 205);
-  text-align: center;
+    color: rgb(255, 235, 205);
+    text-align: center;
 }
 
+/* Red Text */
 .red {
-  color: red;
+    color: red;
 }
 
+/* Red Input */
 .red-input {
-  background: linear-gradient(rgb(244, 120, 120), rgb(255, 0, 0), rgb(244, 120, 120));
-  border: none;
-  border-radius: 15px;
-  ;
-  color: antiquewhite;
-  height: 20px;
-  text-align: center;
+    background: linear-gradient(rgb(244, 120, 120), rgb(255, 0, 0), rgb(244, 120, 120));
+    border: none;
+    border-radius: 15px;
+    color: antiquewhite;
+    height: 20px;
+    text-align: center;
 }
 
+/* Bottom Border */
 .bor {
-  border-bottom: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
-#submit {
-  margin-top: 2rem;
-  width: 100px;
-  background: rgba(245, 6, 6, 0.885);
-  font-weight: bold;
-  color: rgb(255, 235, 205);
-  border-radius: 15px;
+/* Red Submit Button */
+.red_submit {
+    background: rgba(245, 6, 6, 0.885);
+    border-radius: 15px;
+    color: rgb(255, 235, 205);
+    font-weight: bold;
+    margin-top: 2rem;
+    width: 100px;
 }
 
-/* nav customization*/
-#navSeperate {
-  border-top: solid rgba(0, 255, 21, .7) 1px;
-  width: 500px;
-  margin: auto;
-  margin-top: 15px;
+/* Navigation Separator */
+.navSeperate {
+    border-top: solid rgba(0, 255, 21, .7) 1px;
+    margin: auto;
+    margin-top: 15px;
+    width: 500px;
 }
 
-#navTwo {
-  margin-top: 10px;
+/* Second Navigation */
+.navTwo {
+    margin-top: 10px;
 }
 
-/*below controls web eval*/
-#web-eval {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px 20px;
+/* CSS for Web Eval Section */
+.web-eval {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+    padding: 20px 20px;
 }
 
-#website-web-eval {
-  max-width: 250px;
-  height: 650px;
-  align-items: center;
+.website-web-eval {
+    align-items: center;
+    height: 650px;
+    max-width: 250px;
 }
 
-#website-web-eval>#psum {
-  margin-top: 0;
+.website-web-eval>.psum {
+    margin-top: 0;
 }
-
-#website-web-eval>ul>li>h4 {
-  margin-bottom: 0;
-  color: gold;
-}
-
-#website-web-eval>ul>li>p {
-  margin-top: 0;
+.website-web-eval>ul>li>p {
+    margin-top: 0;
 }
 
 .gimmiespace {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .yellow {
-  color: gold;
+    color: gold;
 }
 
 .no_style {
-  list-style: upper-roman;
+    list-style: upper-roman;
 }
 
 .centering {
-  text-align: center;
-  align-content: center;
+    align-content: center;
+    text-align: center;
 }
 
-/*Making the hover pulsate*/
+/* Hover Animation */
 @keyframes pulsate {
-  100% {
-    text-shadow:
-      0 0 7px rgb(250, 255, 0),
-      0 0 14px #FFC107,
-      0 0 17px rgb(250, 255, 0),
-      0 0 24px #FFC107,
-      0 0 34px rgb(250, 255, 0);
-  }
-
+    100% {
+        text-shadow:
+            0 0 7px rgb(250, 255, 0),
+            0 0 14px #FFC107,
+            0 0 17px rgb(250, 255, 0),
+            0 0 24px #FFC107,
+            0 0 34px rgb(250, 255, 0);
+    }
 }
 
 a:hover {
-  animation: pulsate 1.0s infinite alternate;
-  color: yellow;
+    animation: pulsate 1.0s infinite alternate;
+    color: yellow;
 }
 
-/*making glowing text for firstsripts*/
+/* Glow Animation */
 @keyframes pulsateRGB {
-  0% {
-    color: rgb(255, 117, 117);
-    text-shadow:
-      0 0 7px rgb(227, 13, 13),
-      0 0 14px rgb(227, 13, 13),
-      0 0 17px rgb(227, 13, 13),
-      0 0 24px rgb(227, 13, 13),
-      0 0 34px rgb(227, 13, 13);
-  }
+    0% {
+        color: rgb(255, 117, 117);
+        text-shadow:
+            0 0 7px rgb(227, 13, 13),
+            0 0 14px rgb(227, 13, 13),
+            0 0 17px rgb(227, 13, 13),
+            0 0 24px rgb(227, 13, 13),
+            0 0 34px rgb(227, 13, 13);
+    }
 
-  25% {
-    color: pink;
-    text-shadow:
-      0 0 7px rgb(241, 89, 182),
-      0 0 14px rgb(241, 89, 182),
-      0 0 17px rgb(241, 89, 182),
-      0 0 24px rgb(241, 89, 182),
-      0 0 34px rgb(241, 89, 182);
-  }
+    25% {
+        color: pink;
+        text-shadow:
+            0 0 7px rgb(241, 89, 182),
+            0 0 14px rgb(241, 89, 182),
+            0 0 17px rgb(241, 89, 182),
+            0 0 24px rgb(241, 89, 182),
+            0 0 34px rgb(241, 89, 182);
+    }
 
-  50% {
-    color: rgb(0, 255, 251);
-    text-shadow:
-      0 0 7px rgb(0, 255, 251),
-      0 0 14px rgb(0, 255, 251),
-      0 0 17px rgb(0, 255, 251),
-      0 0 24px rgb(0, 255, 251),
-      0 0 34px rgb(0, 255, 251);
-  }
+    50% {
+        color: rgb(0, 255, 251);
+        text-shadow:
+            0 0 7px rgb(0, 255, 251),
+            0 0 14px rgb(0, 255, 251),
+            0 0 17px rgb(0, 255, 251),
+            0 0 24px rgb(0, 255, 251),
+            0 0 34px rgb(0, 255, 251);
+    }
 
-  100% {
-    color: rgb(0, 255, 21);
-    text-shadow:
-      0 0 7px rgb(0, 255, 21),
-      0 0 14px rgb(0, 255, 21),
-      0 0 17px rgb(0, 255, 21),
-      0 0 24px rgb(0, 255, 21),
-      0 0 34px rgb(0, 255, 21);
-  }
-
+    100% {
+        color: rgb(0, 255, 21);
+        text-shadow:
+            0 0 7px rgb(0, 255, 21),
+            0 0 14px rgb(0, 255, 21),
+            0 0 17px rgb(0, 255, 21),
+            0 0 24px rgb(0, 255, 21),
+            0 0 34px rgb(0, 255, 21);
+    }
 }
 
-/*JS glow*/
-#gnameresponse {
-  animation: pulsateRGB 5.0s ease-in-out infinite;
-  color: white;
-} 
-/*alterante use for glow*/
-.glowy{
-  animation: pulsateRGB 5.0s ease-in-out infinite;
-  color: white; 
+/* Elements with Glowing Animation */
+.gnameresponse,
+.glowy {
+    animation: pulsateRGB 5.0s ease-in-out infinite;
+    color: white;
 }
 
+/* Styling for Form Elements */
 .fs_space {
-  margin-left: .25rem;
-  margin-bottom: .5rem;
-  border: none;
-  background: rgb(248, 240, 227);
-  color: black;
+    background: rgb(248, 240, 227);
+    border: none;
+    color: black;
+    margin-bottom: .5rem;
+    margin-left: .25rem;
 }
 
 .feb18round {
-  border-radius: 10px;
-  background: rgb(248, 240, 227);
-  color: rgb(131, 70, 0);
-  font-size: medium
+    background: rgb(248, 240, 227);
+    border-radius: 10px;
+    color: rgb(131, 70, 0);
+    font-size: medium;
 }
 
 .feb18round::placeholder {
-  text-align: center;
-  color: black;
+    color: black;
+    text-align: center;
 }
 
-/*BYO Form*/
-#byo-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-size: large;
+/* BYO Form Styling */
+.byo-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: large;
 }
-#byo-form>label>input {
-  border-radius: 10px;
-  margin: 10px auto;
+
+.byo-form>label>input {
+    border-radius: 10px;
+    margin: 10px auto;
 }
-#bottom-buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+.bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-#bottom-buttons > input {
-  font-size: medium;
+
+.bottom-buttons>input {
+    font-size: medium;
 }
-#classResponse>input {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
+
+.classResponse>input {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
+
 .byoLoadImg {
-  max-width: 170px;
-  margin: auto;
-}
-#byo-form > label > input{
-  font-size: medium;
-  background-color: rgb(248, 240, 227);
+    margin: auto;
+    max-width: 170px;
 }
 
-/*Calculator CSS*/
+.byo-form>label>input {
+    background-color: rgb(248, 240, 227);
+    font-size: medium;
+}
+
+/* Calculator Styling */
 .container {
-  max-width: 20em;
-  margin: auto;
+    margin: auto;
+    max-width: 20em;
 }
 
-.container > p {
-  text-align: center;
+.container>p {
+    text-align: center;
 }
 
 .calculator {
-  border-radius: 12px;
-  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  max-width: 20em;
-  overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: 20em;
+    overflow: hidden;
 }
 
 .calculator__display {
-  background-color: #222222;
-  color: rgb(248, 240, 227);
-  font-size: 1.714285714em;
-  padding: 0.5em 0.75em;
-  text-align: right;
+    background-color: #222222;
+    color: rgb(248, 240, 227);
+    font-size: 1.714285714em;
+    padding: 0.5em 0.75em;
+    text-align: right;
 }
 
 .calculator__keys {
-  background-color: #999;
-  display: grid;
-  grid-gap: 1px;
-  grid-template-columns: repeat(4, 1fr);
+    background-color: #999;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 25%);
 }
 
-.calculator__keys > * {
-  background-color: #222222;
-  color:rgb(248, 240, 227);
-  padding: 0.5em 1.25em;
-  position: relative;
-  text-align: center;
+.calculator__keys>* {
+    background-color: #222222;
+    color: rgb(248, 240, 227);
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
 }
 
-.calculator__keys > *:active::before,
-.calculator__keys > .is-depressed::before {
-  background-color: rgba(0, 0, 0, 0.2);
-  bottom: 0;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
-  content: "";
-  left: 0;
-  opacity: 0.3;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
+.calculator__keys>*:active::before,
+.calculator__keys>.is-depressed::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
 
+/* Styling for Calculator Keys */
 .key--operator {
-  background-color: #222222;
-  color:rgb(248, 240, 227);
+    background-color: #222222;
+    color: rgb(248, 240, 227);
 }
 
 .key--equal {
-  background-image: linear-gradient(to bottom, #d32a00b1, #e30000b8);
-  grid-column: -2;
-  grid-row: 2 / span 4;
+    background-image: linear-gradient(to bottom, #d32a00b1, #e30000b8);
+    grid-column: -2;
+    grid-row: 2 / span 4;
 }
 
-/*CSS for JS ARRAYS!*/
-.jsArray{
-  border-radius: 10px;
-  background-color: rgb(248, 240, 227);
-  font-size: large;
-}
-.jsArrInputs{
-  font-size: large;
-  border-radius: 10px;
-  background-color: #166236;
-  color:rgb(248, 240, 227);
+/* CSS for JS Arrays */
+.jsArray {
+    background-color: rgb(248, 240, 227);
+    border-radius: 10px;
+    font-size: large;
 }
 
-
-/*Project Overview*/
-.proj-overview{
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1400px;
-  gap:50px;
+.jsArrInputs {
+    background-color: #166236;
+    border-radius: 10px;
+    color: rgb(248, 240, 227);
+    font-size: large;
 }
 
-#proj-first{
-  text-overflow: ellipsis;
-  overflow:scroll;
-}
-#proj-img{
-  width: 100%;
-  max-width: 350px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  align-content: center;
-}
-.proj-fieldsets{
-  display: inline-block;
-  max-width: 450px;
-  max-height: 300px;
-  border-radius: 10px;
-  margin:0 ;
-  text-overflow: ellipsis;
-  overflow:scroll;
-  border:1px solid rgb(0, 255, 21);
+/* Project Overview Styling */
+.proj-overview {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 50px;
+    justify-content: center;
+    max-width: 1400px;
 }
 
-#proj-list > li{
-  text-align: justify;
+.proj-first {
+    overflow: scroll;
+    text-overflow: ellipsis;
 }
 
+.proj-img {
+    align-content: center;
+    border-radius: 10px;
+    height: 300px;
+    max-width: 350px;
+    object-fit: cover;
+    width: 100%;
+}
 
-/*Media Queries*/
+.proj-fieldsets {
+    border: 1px solid rgb(0, 255, 21);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0;
+    max-height: 300px;
+    max-width: 450px;
+    overflow: scroll;
+    text-overflow: ellipsis;
+}
+
+.proj-list>li {
+    text-align: justify;
+}
+
+/* Media Queries */
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
-  #colorbox {
-    background-color: yellow;
-  }
+    #colorbox {
+        background-color: yellow;
+    }
 }
 
 /* Rule Overrides For Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 980px) {
-  #colorbox {
-    background-color: orange;
-  }
+    #colorbox {
+        background-color: orange;
+    }
 }
 
 /* Rule Overrides For Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
-  #colorbox {
-    background-color: red;
-  }
+    #colorbox {
+        background-color: red;
+    }
 }
