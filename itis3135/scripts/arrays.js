@@ -74,8 +74,6 @@ function modifySalary() {
         option.text = item;
         dropdown.add(option);
     });
-
-
 }
 const getDropdownValue = () => {
     let msInput = document.getElementById('bbb');
@@ -126,7 +124,6 @@ function displayResults() {
     `;
 
 }
-
 function displaySalary() {
     if (person == "" || salaries == "") {
         alert('Please add a person first.');
@@ -141,7 +138,6 @@ function displaySalary() {
 <th>Person</th>
 <th>Salary</th>
 `;
-
     for (let i = 0; i < person.length; i++) {
         let row = tableDiv.insertRow();
         let nameCell = row.insertCell(0);
@@ -149,6 +145,4 @@ function displaySalary() {
         nameCell.textContent = person[i];
         ageCell.textContent = "$" + salaries[i];
     }
-
-
 }

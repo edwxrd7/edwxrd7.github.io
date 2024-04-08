@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="center-all">
-<button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Henriquez || ITIS3135 HTML Forms</title>
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link id="styless" rel="stylesheet" href="styles/default.css">
 </head>
 
-<body class="center" style="  background: linear-gradient(rgb(69, 0, 0), rgba(136, 22, 22, 0.906), rgb(69, 0, 0));
+<body class="center-all" style="  background: linear-gradient(rgb(69, 0, 0), rgba(136, 22, 22, 0.906), rgb(69, 0, 0));
 color: rgb(255, 235, 205);">
-        <div data-include="components/header.html"></div>
+<button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
+    <div data-include="components/header.html"></div>
     <main>
         <form action="#" class="formholder red-form">
             <h2>HTML Forms</h2>
@@ -34,9 +35,9 @@ color: rgb(255, 235, 205);">
                 <label class="jan28">Water (not that important imo)<input id="water" value="4" type="checkbox"></label>
                 <label class="jan28">Fruit Drinks<input id="fruit" value="5" type="checkbox"></label>
             </fieldset>
-            <fieldset class="bor" class="favChicken">
+            <fieldset class="bor favChicken">
                 <label class="jan28">You are cravin a chicken sandwhich, where do you go?
-                    <select class="red-select" class="red-dropdown">
+                    <select class="red-select red-dropdown">
                         <option>(Select an option below)</option>
                         <option>Chick Fil A!</option>
                         <option>Daves Hot Chicken!</option>
@@ -56,7 +57,7 @@ color: rgb(255, 235, 205);">
                 <label class="jan28" for="yes"><input class="music-space" id="yes" type="radio" name="music" required>
                     Where my pickup truck at??</label>
             </fieldset>
-            <input id="submit" type="Submit" class="red_submit" value="Submit" class="submit">
+            <input id="submit" type="Submit" class="red_submit submit" value="Submit" >
         </form>
     </main>
 
@@ -65,16 +66,17 @@ color: rgb(255, 235, 205);">
     <script src="scripts/include.js"></script>
     <script>
         // JavaScript code to change font color of navigation links
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Select all navigation links with the class "special-nav"
             var specialNavLinks = document.querySelectorAll(".special-nav");
 
             // Loop through each navigation link and update its font color
-            specialNavLinks.forEach(function(link) {
+            specialNavLinks.forEach(function (link) {
                 link.style.color = "#FF0000"; // Change the color to your desired color
             });
         });
     </script>
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </body>
 
 </html>

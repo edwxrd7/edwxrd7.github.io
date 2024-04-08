@@ -1,3 +1,5 @@
+/*csslint box-sizing: false*/
+
 /* Global Styles */
 html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -43,10 +45,16 @@ main {
 
 /* Toggle Button */
 .toggle-css {
-    background: rgb(255, 217, 0);
+    background: rgb(0, 156, 23);
+    border:none;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    box-shadow: 0 0 2px 2px rgb(0, 255, 60);
+    color: rgb(255, 255, 255);
     display: flex;
+}
+.toggle-css:hover{
+    background-color: rgb(0, 255, 0);
+    transition:1s;
 }
 
 /* Center Alignment */
@@ -102,7 +110,9 @@ fieldset {
 /* Green Border */
 .border-green>*,
 .border-greenn>td {
-    border: 1px solid rgba(0, 255, 0, 0.631);
+    border: 1px solid;
+    border-color: rgb(0, 255, 0);
+    border-color: rgba(0, 255, 0, 0.631);
 }
 
 /* Ordered List */
@@ -183,7 +193,8 @@ table {
 
 /* Red Submit Button */
 .red_submit {
-    background: rgba(245, 6, 6, 0.885);
+    background-color: rgb(245, 6, 6);
+    background-color: rgba(245, 6, 6, 0.885);
     border-radius: 15px;
     color: rgb(255, 235, 205);
     font-weight: bold;
@@ -193,7 +204,10 @@ table {
 
 /* Navigation Separator */
 .navSeperate {
-    border-top: solid rgba(0, 255, 21, .7) 1px;
+    border-top: 1px solid;
+    border-top-color: rgb(0, 255, 21);
+    /* fallback color*/
+    border-top-color: rgba(0, 255, 21, .7);
     margin: auto;
     margin-top: 15px;
     width: 500px;
@@ -227,6 +241,7 @@ table {
 .website-web-eval>.psum {
     margin-top: 0;
 }
+
 .website-web-eval>ul>li>p {
     margin-top: 0;
 }
@@ -424,6 +439,7 @@ a:hover {
 
 .calculator__keys>*:active::before,
 .calculator__keys>.is-depressed::before {
+    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.2);
     bottom: 0;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
@@ -468,7 +484,7 @@ a:hover {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
     max-width: 1400px;
@@ -503,24 +519,57 @@ a:hover {
     text-align: justify;
 }
 
+/*Validation Buttons*/
+.vm {
+    margin: 0 5px 0 5px;
+}
+
+.css-vali {
+    background: rgb(181, 85, 0);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgb(255, 119, 0);
+    color: #fff;
+}
+
+.css-vali:hover {
+    background: rgb(255, 119, 0);
+    transition: 0.7s;
+}
+
+.html-vali {
+    background-color: rgb(3, 0, 207);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgb(0, 166, 255);
+    color: #fff;
+
+}
+
+.html-vali:hover {
+    background-color: rgb(0, 166, 255);
+    transition: 0.7s;
+}
+
+.w3c-vali {
+    background-color: rgb(105, 0, 143);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgb(187, 0, 255);
+    color: #fff;
+}
+
+.w3c-vali:hover {
+    background-color: rgb(187, 0, 255);
+    transition: 0.7s;
+}
+
 /* Media Queries */
 /* Rule Overrides For Laptops / Small Screens */
-@media screen and (min-width: 981px) and (max-width: 1400px) {
-    #colorbox {
-        background-color: yellow;
-    }
-}
+@media screen and (min-width: 981px) and (max-width: 1400px) {}
 
 /* Rule Overrides For Tablet Devices */
-@media screen and (min-width: 601px) and (max-width: 980px) {
-    #colorbox {
-        background-color: orange;
-    }
-}
+@media screen and (min-width: 601px) and (max-width: 980px) {}
 
 /* Rule Overrides For Mobile Devices */
-@media screen and (min-width: 370px) and (max-width: 600px) {
-    #colorbox {
-        background-color: red;
-    }
-}
+@media screen and (min-width: 370px) and (max-width: 600px) {}

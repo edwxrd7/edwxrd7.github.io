@@ -1,0 +1,16 @@
+[
+    { "title": "Home", "url": "./" },
+    { "title": "Introduction", "url": "introduction.html" },
+    { "title": "Contract", "url": "contract.html" },
+    { "title": "Tables", "url": "tables.html" },
+    { "title": "Form", "url": "forms.html" },
+    { "title": "Web Eval", "url": "website_evaluations.html" },
+    { "title": "Scripts", "url": "firstscripts.html" },
+    { "title": "About", "url": "about.html" },
+    { "title": "BYO Intro", "url": "byo_intro.html" },
+    { "title": "Calculator", "url": "calculator_try.html" },
+    { "title": "Arrays", "url": "arrays.html" },
+    { "title": "Project 1", "url": "project_overview.html" },
+    { "title": "Drawing", "url": "drawing.html" }
+  ]
+  

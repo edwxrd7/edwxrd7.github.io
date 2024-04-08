@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html class="background-color center-all" lang="en">
-    <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
+<html class="background-color" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Henriquez || ITIS3135 BYO Intro</title>
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link id="styless" rel="stylesheet" href="styles/default.css">
 </head>
 
-<body class="center bodyFormat" id="bodyy">
+<body class="center-all bodyFormat" id="bodyy">   
+    <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
     <div data-include="components/header.html"></div>
     <main>
-        <form class="byo-form"style="font-size: larger;">
+        <form class="byo-form" style="font-size: larger;">
             <h2>BYO Intro</h2>
             <h3>Time to BYO Intro page, please fill out the form below so we can create your own page!</h3>
             <label>Name: <input id="byo-name"></label>
             <label>Choose a Mascot: <input id="byo-mascot"></label>
             <label>Image upload: <input required type="file" id="introImage" name="file"></label>
-            <button id="resArea" type="button" class="byoLoadImg" onclick="loadImage()">Click here to load
+            <button style="width: 200px; align-self: center; height: 25px;" type="button" class="byoLoadImg resArea" onclick="loadImage()">Click here to load
                 image!</button>
             <div id="loadImage">
 
@@ -28,7 +29,7 @@
             <label>Academic Background: <input id="byo-academicBack"></label>
             <label>Background in Web Development: <input id="byo-webBack"></label>
             <label>Primary Computer Platform: <input id="byo-comp"></label>
-            <label id="byo-courses">Courses currently taking: <button id="resArea" type="button" onclick="addClass()"
+            <label id="byo-courses">Courses currently taking: <button class="resArea" type="button" onclick="addClass()"
                     id="add-class">Click Here to add Classes!</button></label>
             <label class="classResponse" id="classResponse"></label>
             <label>Funny fact: <input id="byo-fact"></label>
@@ -51,6 +52,8 @@
     <script src="scripts/include.js"></script>
     <script src="scripts/survey.js"></script>
     <script src="scripts/css-toggle.js"></script>
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+
 </body>
 
 </html>
