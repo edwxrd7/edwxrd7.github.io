@@ -10,7 +10,7 @@
 </head>
 <body class="bodyFormat background-color center-all">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
-    <div data-include="components/header.html"></div>
+    <header class="center-all"></header>
     <main class="gimmiespace">
         <h2>About</h2>
         <p>My business is a audio retail store! This covers anything
@@ -22,8 +22,14 @@
               <p>We recognize that music can play a significant role in our lives, 
                 so why not enjoy it as best as we possibly can?</p>
     </main>
-    <div data-include="components/footer.html"></div>
+    <div id="foot">
+        <footer id="footer"></footer>
+        <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
+        <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
+        <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
+    </div>
          <script src="scripts/include.js"></script>
+         <script src="scripts/footnhead.js"></script>
          <script src="scripts/css-toggle.js"></script>
          <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </body>

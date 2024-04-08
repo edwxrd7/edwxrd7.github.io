@@ -11,12 +11,18 @@
 
 <body class="bodyFormat background-color" style="font-size: larger;">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
-    <div data-include="components/header.html"></div>
+    <header class="center-all"></header>
     <main id="homeMargin">
         <h2>Home</h2>
         <p>This is all the content for my ITIS 3135 class</p>
     </main>
-    <div data-include="components/footer.html"></div>
+    <div id="foot">
+        <footer id="footer"></footer>
+        <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
+        <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
+        <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
+    </div>
+    <script src="scripts/footnhead.js"></script>
     <script src="scripts/include.js"></script>
     <script src="scripts/css-toggle.js"></script>
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>

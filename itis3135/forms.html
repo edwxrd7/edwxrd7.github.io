@@ -8,12 +8,12 @@
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link id="styless" rel="stylesheet" href="styles/default.css">
 </head>
-
+ 
 <body class="center-all" style="  background: linear-gradient(rgb(69, 0, 0), rgba(136, 22, 22, 0.906), rgb(69, 0, 0));
 color: rgb(255, 235, 205);">
 <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
-    <div data-include="components/header.html"></div>
-    <main>
+<header class="center-all"></header>
+<main>
         <form action="#" class="formholder red-form">
             <h2>HTML Forms</h2>
             <fieldset class="bor formholder">
@@ -61,8 +61,13 @@ color: rgb(255, 235, 205);">
         </form>
     </main>
 
-    <div data-include="components/footer.html"></div>
-    <script src="scripts/css-toggle.js"></script>
+    <div id="foot">
+        <footer id="footer"></footer>
+        <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
+        <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
+        <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
+    </div>    <script src="scripts/css-toggle.js"></script>
+    <script src="scripts/footnhead.js"></script>
     <script src="scripts/include.js"></script>
     <script>
         // JavaScript code to change font color of navigation links

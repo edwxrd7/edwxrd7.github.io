@@ -1,4 +1,4 @@
-[
+{"nav1":[
     { "title": "Home", "url": "./" },
     { "title": "Introduction", "url": "introduction.html" },
     { "title": "Contract", "url": "contract.html" },
@@ -12,5 +12,17 @@
     { "title": "Arrays", "url": "arrays.html" },
     { "title": "Project 1", "url": "project_overview.html" },
     { "title": "Drawing", "url": "drawing.html" }
+  ],
+  "nav2":[
+    {"title": "Crappy", "url": "Crappy/@LETS7 VIBE.htm" },
+    {"title": "Hobby", "url": "hobby/index.html" }
+  ],
+  "footer":[
+    {"title": "Charlotte.edu", "url": "https://webpages.charlotte.edu/ehenriq3/" },
+    {"title": "GitHub.com", "url": "https://github.com/edwxrd7" },
+    {"title": "GitHub.io", "url": "https://github.com/edwxrd7/itis3135" },
+    {"title": "freeCodeCamp", "url": "https://www.freecodecamp.org/edwardh7" },
+    {"title": "Codeacademy", "url": "https://www.codecademy.com/profiles/css2918182977" },
+    {"title": "LinkedIn", "url": "https://www.linkedin.com/in/edward-henriquez-418b122aa/" }
   ]
-  
+}

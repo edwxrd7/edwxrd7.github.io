@@ -8,10 +8,10 @@
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link id="styless" rel="stylesheet" href="styles/default.css">
 </head>
-
+ 
 <body class="bodyFormat background-color">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
-    <div data-include="components/header.html"></div>
+    <header class="center-all"></header>
     <h1>Project Overview</h1>
     <h3 class="proj-htree"><em>p.s. you can sroll within each box!</em></h3>
     <main class="homeMargin proj-overview">
@@ -64,7 +64,13 @@
         </fieldset>
 
     </main>
-    <div data-include="components/footer.html"></div>
+    <div id="foot">
+        <footer id="footer"></footer>
+        <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
+        <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
+        <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
+    </div>   
+    <script src="scripts/footnhead.js"></script>
     <script src="scripts/include.js"></script>
     <script src="scripts/css-toggle.js"></script>
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>

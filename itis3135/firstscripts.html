@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="background-color center-all" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,39 +11,49 @@
 
 <body class="center bodyFormat">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
-    <div data-include="components/header.html"></div>
+    <header class="center-all"></header>
     <main>
         <h2>Scripts</h2>
         <div id="date"></div>
 
         <p>Whats your name?</p>
-        <input class="feb18round" id="0feb18"><button class="fs_space" type="button" onclick="nameFunction()">Submit</button>
+        <input class="feb18round" id="0feb18"><button class="fs_space" type="button"
+            onclick="nameFunction()">Submit</button>
         <p id="feb18response"></p>
         <p>How are you feeling today?</p>
-        <input class="feb18round" id="1feb18"><button class="fs_space" type="button" onclick="feelingToday()">Submit</button>
+        <input class="feb18round" id="1feb18"><button class="fs_space" type="button"
+            onclick="feelingToday()">Submit</button>
         <p id="1feb18response"></p>
         <p>Input you favorite number from 1-10!</p>
-        <input class="feb18round" id="favoritenumber" type="number" min="0" max="10"><button class="fs_space" type="button"
-            onclick="favoriteNumber()">Submit</button>
+        <input class="feb18round" id="favoritenumber" type="number" min="0" max="10"><button class="fs_space"
+            type="button" onclick="favoriteNumber()">Submit</button>
         <p id="favoriteumberresponse"></p>
 
         <p>Want to see your name in glowing letters???</p>
-        <input class="feb18round" placeholder="try_it!!!" id="gname"><button class="fs_space" type="button" onclick="gname()">Submit</button>
+        <input class="feb18round" placeholder="try_it!!!" id="gname"><button class="fs_space" type="button"
+            onclick="gname()">Submit</button>
         <p class="gnameresponse"></p>
 
         <p>Debating on what Brand of headphones/what headphones to go with??</p>
-         <p>Let us choose for you!</p>
+        <p>Let us choose for you!</p>
         <button class="fs_space" type="button" onclick="randomHeadphones()">Submit</button>
         <p id="headphonesresponse"></p>
 
         <p>If you had a pet hamster, what would you name it?</p>
-        <input class="feb18round" id="hamstername"><button class="fs_space" type="button" onclick="hamsterName()">Submit</button>
+        <input class="feb18round" id="hamstername"><button class="fs_space" type="button"
+            onclick="hamsterName()">Submit</button>
         <p id="hamsterresponse"></p>
         <p>Click below to get the name of 1 of 5 of the most popular pet hamster species!!!</p>
         <button class="fs_space" type="button" onclick="hamsterSpecies()">HAMSTER SPIECES!</button>
 
     </main>
-    <div data-include="components/footer.html"></div>
+    <div id="foot">
+        <footer id="footer"></footer>
+        <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
+        <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
+        <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
+    </div>
+    <script src="scripts/footnhead.js"></script>
     <script src="scripts/include.js"></script>
     <script src="scripts/css-toggle.js"></script>
     <script src="scripts/defaultscripts.js"></script>

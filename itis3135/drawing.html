@@ -10,15 +10,21 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
     <script src="scripts/drawing.js"></script>
 </head>
-
+ 
 <body class="bodyFormat background-color">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
-    <div data-include="components/header.html"></div>
+    <header class="center-all"></header>
     <main id="homeMargin">
         <h2>Drawing with p5.js</h2>
         <p>Snowflakes!!!</p>
     </main>
-    <div data-include="components/footer.html"></div>
+    <div id="foot">
+        <footer id="footer"></footer>
+        <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
+        <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
+        <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
+    </div>   
+    <script src="scripts/footnhead.js"></script>
     <script src="scripts/include.js"></script>
     <script src="scripts/css-toggle.js"></script>
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>

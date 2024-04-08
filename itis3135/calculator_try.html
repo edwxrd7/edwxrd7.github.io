@@ -6,10 +6,10 @@
     <title>Edward Henriquez || ITIS3135 Calculator</title>
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link id="styless" rel="stylesheet" href="styles/default.css">
-</head>
+</head> 
 <body class="center bodyFormat">
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
-    <div data-include="components/header.html"></div>
+    <header class="center-all"></header>
     <main id="homeMargin">
         <div class="container">
             <p>
@@ -39,8 +39,13 @@
             </div>
         </div>
     </main>
-    <div data-include="components/footer.html"></div>
-    <script src="scripts/include.js"></script>
+    <div id="foot">
+        <footer id="footer"></footer>
+        <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
+        <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
+        <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
+    </div>    <script src="scripts/include.js"></script>
+    <script src="scripts/footnhead.js"></script>
     <script src="scripts/calculator_try.js"></script>
     <script src="scripts/css-toggle.js"></script>
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
