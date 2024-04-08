@@ -51,7 +51,7 @@ loadNavigationLinks('navLinks2', 'nav2');
 loadNavigationLinks('footer', 'footer');
 const AYW = document.createElement('p');
 const PBB = document.createElement('p');
-PBB.innerHTML = `<p class="center-all">Page Built by <a href="enigmatichamster.com/">Edward Henriquez Enterprises</a>, Certified in <a href="https://www.freecodecamp.org/certification/edwardh7/responsive-web-design">RWD</a> & <a href="https://www.freecodecamp.org/certification/edwardh7/javascript-algorithms-and-data-structures-v8">JS </a>&copy;2024</p>`
+PBB.innerHTML = `<p class="center-all">Page built by <a href="enigmatichamster.com/">Edward Henriquez Enterprises</a>, Certified in <a href="https://www.freecodecamp.org/certification/edwardh7/responsive-web-design">RWD</a> & <a href="https://www.freecodecamp.org/certification/edwardh7/javascript-algorithms-and-data-structures-v8">JS </a>&copy;2024</p>`
 AYW.innerHTML = `<i>Amplify Your World</i>`;
 document.getElementById('foot').appendChild(PBB);
 document.getElementById('foot').appendChild(AYW);
