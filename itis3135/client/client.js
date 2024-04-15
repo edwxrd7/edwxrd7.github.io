@@ -40,7 +40,7 @@ $(document).ready(() => {
 
   function scrollFunction() {
     if (window.innerWidth <= 700) {
-      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 80) {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 40) {
         document.getElementById("water").style.padding = "15px 0";
         document.getElementById('logo').style.width = "80px";
         document.getElementById('openNav').style.width = "70px";
@@ -51,12 +51,12 @@ $(document).ready(() => {
         document.getElementById('logo').style.width = "100px";
         document.getElementById('openNav').style.width = "100px";
         document.getElementById('openNav').style.height = "40px";
-        document.getElementById('openNav').style.fontSize = '8px';
+        document.getElementById('openNav').style.fontSize = '12px';
         document.getElementById('name').style.fontSize = '30px';
       }
     } else {
       // Adjust styles for screens wider than 700px
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 80) {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 40) {
         document.getElementById("water").style.padding = "15px 0";
         document.getElementById('logo').style.width = "75px"; // Adjusted width for wider screens
         document.getElementById('openNav').style.width = "70px"; // Adjusted width for wider screens

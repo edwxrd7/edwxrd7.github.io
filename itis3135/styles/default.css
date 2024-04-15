@@ -40,21 +40,21 @@ html {
 main {
     margin: 0 auto;
     max-width: 1200px;
-    width: 90%;
 }
 
 /* Toggle Button */
 .toggle-css {
     background: rgb(0, 156, 23);
-    border:none;
+    border: none;
     border-radius: 10px;
     box-shadow: 0 0 2px 2px rgb(0, 255, 60);
     color: rgb(255, 255, 255);
     display: flex;
 }
-.toggle-css:hover{
+
+.toggle-css:hover {
     background-color: rgb(0, 255, 0);
-    transition:1s;
+    transition: 1s;
 }
 
 /* Center Alignment */
@@ -74,7 +74,7 @@ main {
 }
 
 /* Image Styling */
-img {
+.img {
     max-width: 350px;
     width: 100%;
 }
@@ -563,6 +563,66 @@ a:hover {
     background-color: rgb(187, 0, 255);
     transition: 0.7s;
 }
+
+/* SLidehosw*/
+
+.slides-container {
+    animation: borderGlow 8s linear infinite alternate;
+    background-color: #1662333e;
+    border: 2px solid black;
+    display: block;
+    height: 600px;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+div.active {
+    display: block;
+}
+
+.slide {
+    display: none;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.slide>p {
+    font-size: larger;
+}
+
+.slide>img {
+    border: 1px solid black
+}
+
+.prev,
+.next {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    top: 50%;
+    box-shadow: 0 0 15px rgb(0, 255, 0);
+}
+.prev:hover, .next:hover{
+    background-color: #69a26c;
+    transition: .8s;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 /* Media Queries */
 /* Rule Overrides For Laptops / Small Screens */
