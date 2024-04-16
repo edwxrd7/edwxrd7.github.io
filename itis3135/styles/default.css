@@ -567,9 +567,9 @@ a:hover {
 /* SLidehosw*/
 
 .slides-container {
-    animation: borderGlow 8s linear infinite alternate;
-    background-color: #1662333e;
-    border: 2px solid black;
+    background-color: #0eac4b3e;
+    border: 5px solid black;
+    border-radius: 20px;
     display: block;
     height: 600px;
     justify-content: center;
@@ -586,9 +586,9 @@ div.active {
 
 .slide {
     display: none;
+    height: 100%;
     margin-bottom: 10%;
     margin-top: 5%;
-    height: 100%;
     width: 100%;
 }
 
@@ -602,8 +602,9 @@ div.active {
 
 .prev,
 .next {
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     border: none;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     outline: none;
@@ -611,10 +612,13 @@ div.active {
     top: 50%;
     box-shadow: 0 0 15px rgb(0, 255, 0);
 }
-.prev:hover, .next:hover{
+
+.prev:hover,
+.next:hover {
     background-color: #69a26c;
     transition: .8s;
 }
+
 .prev {
     left: 10px;
 }

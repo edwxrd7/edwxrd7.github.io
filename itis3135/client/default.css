@@ -1,48 +1,49 @@
-body{
- background-image:url("images/nadiia-ploshchenko-Pi8jkDykKcw-unsplash.jpg");
+body {
+  background-image: url("images/nadiia-ploshchenko-Pi8jkDykKcw-unsplash.jpg");
   background-color: rgba(14, 202, 254, 0.683);
-  background-repeat:inherit;
-  color:white;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: inherit;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .water {
-  left:0px;
-  top:0px;
-  width:100%;
-  height:100px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100px;
   position: fixed;
   transition: 0.4s;
-  padding:50px 0px;
+  padding: 50px 0px;
   background-color: rgb(128, 173, 227, .7);
 }
-.water > img{
- position: absolute;
- top:0px;
- left:0px;
+
+.water>img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
-.water > header{
-  margin:0;
+
+.water>header {
+  margin: 0;
   display: flex;
   justify-content: center;
 }
-.logo{
-  width: 150px; border: 1px solid red;
+
+.logo {
+  width: 150px;
+  border: 1px solid red;
   transition: 0.4s;
 }
 
-/* nav links*/ 
-nav{
-  margin:auto;
-}
-nav > a{
-  margin:0 40px 0 40px;
-}
-.hide{
+/* nav links*/
+
+.hide {
   display: none;
 }
+
 section {
   margin-top: 210px;
-  background-color: rgb(255,255,255, .2);
+  background-color: rgb(255, 255, 255, .2);
   display: none;
   /* Hide all sections by default */
   padding: 20px;
@@ -52,79 +53,94 @@ section.active {
   display: block;
   /* Display active section */
 }
-.hide{
-  display:none;
+
+.hide {
+  display: none;
 }
+
+.nav-lnks {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.415);
+  height: 100%;
+  width: 100%;
+  z-index: 1200;
+}
+
+.filter {
+  filter: blur(3.5px);
+  transition: .4s;
+}
+
 #navMenu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background:linear-gradient(rgba(0, 87, 128, 0.516), rgba(13, 0, 69, 0.795),rgba(0, 87, 128, 0.516));
-  z-index: 1000;
-  border-radius: 50%;
+  height: 26%;
+  background: linear-gradient(rgb(62, 0, 58), rgba(162, 89, 0, 0.731), rgb(62, 0, 58));
+  z-index: 1100;
 }
 
 #navMenu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 70px;
+  justify-content: center;
 }
 
 #navMenu ul li {
-  margin:0px 0px 35px 0;
-  height:45px;
-  width:90px;
   text-align: center;
   border-radius: 25px;
 }
 
-#navMenu ul li a:hover{
-  text-shadow:0 0 5px red;
--webkit-box-shadow: 0 8px 6px -6px red;
-   -moz-box-shadow: 0 8px 6px -6px red;
-        box-shadow: 0 8px 6px -6px red;
+#navMenu ul li a:hover {
+  text-shadow: 0 0 5px red;
+  -webkit-box-shadow: 0 8px 6px -6px red;
+  -moz-box-shadow: 0 8px 6px -6px red;
+  box-shadow: 0 8px 6px -6px red;
 }
-#navMenu ul li a.clicked{
-  text-shadow:0 0 5px rgb(0, 255, 145);
+
+#navMenu ul li a.clicked {
+  text-shadow: 0 0 5px rgb(0, 255, 145);
   -webkit-box-shadow: 0 8px 6px -6px rgb(0, 255, 145);
-     -moz-box-shadow: 0 8px 6px -6px rgb(0, 255, 145);
-          box-shadow: 0 8px 6px -6px rgb(0, 255, 145);
+  -moz-box-shadow: 0 8px 6px -6px rgb(0, 255, 145);
+  box-shadow: 0 8px 6px -6px rgb(0, 255, 145);
 }
 
 #navMenu ul li a {
   text-decoration: none;
   color: white;
-  font-size: 24px;
+  font-size: 35px;
 }
 
 #openNav {
-  font-size:13px;
+  font-size: 13px;
   border: none;
-  position:absolute;
+  position: absolute;
   z-index: 1100;
   border-radius: 10px;
-  width:140px;
-  height:60px;
+  width: 140px;
+  height: 60px;
   background-color: transparent;
-  bottom:0px;
-  left:0px;
-  transition:0.7s;
-  color:white;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.7s;
+  color: white;
 }
-.circle{
+
+.circle {
   height: 15px;
   width: 15px;
   background-color: #1a1411d1;
   border-radius: 50%;
   display: inline-block;
 }
-.photo-gallery{
+
+.photo-gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -135,79 +151,129 @@ section.active {
   margin: 0 auto;
   padding: 20px 10px;
 }
-.photo-gallery img{
+
+.photo-gallery img {
   width: 100%;
   max-width: 350px;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }
-.center-all{
+
+.center-all {
   text-align: center;
 }
-.foot-link{
+
+.foot-link {
   text-decoration: none;
   color: rgb(255, 0, 255);
 }
-.foot-link:hover{
-  color:rgb(0, 255, 145);
-  text-decoration:underline;
+
+.foot-link:hover {
+  color: rgb(0, 255, 145);
+  text-decoration: underline;
   font-weight: bold;
   transition: .4s;
 }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  z-index: 999;
+  /* Ensure it's above other content */
+  display: none;
+  /* Initially hidden */
+  backdrop-filter: blur(5px);
+  /* Apply the blur effect */
+}
+
 @media screen and (max-width: 580px) {
   #navbar {
-    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    padding: 20px 10px !important;
+    /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
   }
+
   #navbar a {
     float: none;
     display: block;
     text-align: left;
   }
+
+  #navMenu {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(62, 0, 58), rgba(162, 89, 0, 0.731), rgb(62, 0, 58));
+    z-index: 1100;
+  }
+
+  #navMenu ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 150px;
+    margin-right: 40px;
+  }
+  #navMenu > ul > li > a{
+    font-size: 45px;
+  }
   #navbar-right {
     float: none;
   }
   .water {
-    left:0px;
-    top:0px;
-    width:100%;
-    height:100px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100px;
     position: fixed;
     transition: 0.4s;
     background-color: rgba(128, 227, 199, 0.7);
   }
-  .water > header{
-    margin:0;
+
+  .water>header {
+    margin: 0;
     margin-top: 15px;
     margin-right: 25%;
     display: flex;
     justify-content: center;
     position: fixed;
     text-align: center;
-    left:25%;
+    left: 25%;
   }
-  .water > img{
+
+  .water>img {
     position: absolute;
-    top:0px;
-    left:0px;
-   }
-   #openNav {
-    font-size:12px;
-    position:absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  #openNav {
+    font-size: 12px;
+    position: absolute;
     z-index: 1100;
     border-radius: 10px;
-    width:100px;
-    height:40px;
+    width: 100px;
+    height: 40px;
     background-color: transparent;
-    bottom:0px;
-    left:0px;
-    transition:0.7s;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.7s;
   }
-  .logo{
-    width: 80px; border: 1px solid red;
+
+  .logo {
+    width: 80px;
+    border: 1px solid red;
     transition: 0.4s;
   }
-  .circle{
+
+  .circle {
     height: 14px;
     width: 14px;
     background-color: #1a1411d1;

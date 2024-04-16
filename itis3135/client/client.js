@@ -26,16 +26,30 @@ links.forEach(function (link) {
 
 $(document).ready(() => {
 
-  const $open = $('#openNav');
   const $navMenu = $('#navMenu');
+  const $overlay = $('#overlay');
   const $close = $('li a');
 
-  $open.on('click', () => {
-    $navMenu.show(900);
+  $('#openNav').on('click', () => {
+    $navMenu.show('slow');
+    $overlay.show();
+  });
+  if (window.innerWidth <= 700) {
+    $navMenu.on('click', () => {
+      $navMenu.hide(400);
+      $overlay.hide();
+    }
+    )
+  };
+
+  $overlay.on('click', () => {
+    $navMenu.hide(400);
+    $overlay.hide();
   });
 
   $close.on('click', () => {
     $navMenu.hide(400);
+    $overlay.hide();
   });
 
   function scrollFunction() {
