@@ -14,7 +14,8 @@
     { "title": "Drawing", "url": "drawing.html" },
     { "title": "Project", "url": "client/index.html"},
     { "title": "Slideshow", "url": "slideshow.html"},
-    { "title": "Review 1", "url": "review1.html"}
+    { "title": "Review 1", "url": "review1.html"},
+    { "title": "Review 2", "url": "review2.html"}
   ],
   "nav2":[
     {"title": "Crappy", "url": "Crappy/@LETS7 VIBE.htm" },
