@@ -627,6 +627,45 @@ div.active {
     right: 10px;
 }
 
+/*Peer review*/
+.peer-review-list {
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.yes-peer {
+    color: rgb(0, 255, 132);
+}
+
+.no-peer {
+    color: #ff0909;
+}
+
+.list-container {
+    width: 700px;
+    height: 350px;
+    margin: auto;
+    overflow: scroll;
+    border-radius: 20px;
+    border: 5px solid green;
+    background-color: rgba(0, 89, 13, 0.634);
+}
+
+.res-peer {
+    color: rgb(181, 222, 0);
+}
+
+.peer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
+}
+.img-peer {
+    width: 650px;
+    border-radius: 15px;
+}
+
 
 /* Media Queries */
 /* Rule Overrides For Laptops / Small Screens */

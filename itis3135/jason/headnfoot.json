@@ -12,9 +12,9 @@
     { "title": "Arrays", "url": "arrays.html" },
     { "title": "Project 1", "url": "project_overview.html" },
     { "title": "Drawing", "url": "drawing.html" },
-    { "title": "zzzz", "url": "client/index.html"},
-    { "title": "Slideshow", "url": "slideshow.html"}
-
+    { "title": "Project", "url": "client/index.html"},
+    { "title": "Slideshow", "url": "slideshow.html"},
+    { "title": "Review 1", "url": "review1.html"}
   ],
   "nav2":[
     {"title": "Crappy", "url": "Crappy/@LETS7 VIBE.htm" },
