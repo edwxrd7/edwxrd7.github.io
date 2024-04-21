@@ -12,17 +12,15 @@
     <button class="toggle-css" type="button" id="toggle-css">Toggle CSS</button>
     <header class="center-all"></header>
     <main>
-        <form class="byo-form" style="font-size: larger;">
+        <form id="byo-form" class="byo-form" style="font-size: larger;">
             <h2>BYO Intro</h2>
             <h3>Time to BYO Intro page, please fill out the form below so we can create your own page!</h3>
             <label>Name: <input id="byo-name"></label>
             <label>Choose a Mascot: <input id="byo-mascot"></label>
-            <label>Image upload: <input required type="file" id="introImage" name="file"></label>
+            <label>Image upload: <input type="file" id="introImage" name="file" required></label>
             <button style="width: 200px; align-self: center; height: 25px;" type="button" class="byoLoadImg resArea" onclick="loadImage()">Click here to load
                 image!</button>
-            <div id="loadImage">
-
-            </div>
+            <div id="loadImage"></div>
             <label>Image Caption: <input id="byo-imagecap"></label>
             <label>Personal Background: <input id="byo-personalBack"></label>
             <label>Professional Background: <input id="byo-professionalBack"></label>
@@ -35,25 +33,24 @@
             <label>Funny fact: <input id="byo-fact"></label>
             <label>Anything Else: <input id="byo-anything"></label>
             <label>I understand that what is on this page is not password protected and
-                I will not put anything here that I don’t want publicly available.  <input type="checkbox"></label>
+                I will not put anything here that I don’t want publicly available.  <input type="checkbox" required></label>
             <div class="bottom-buttons">
-                <input  type="button" value="Submit" id="submitButton">
+                <input  type="button" value="Submit" id="submitButton" onclick="checkImage()">
                 <input  type="reset" value="Reset" onclick="resetForm()">
             </div>
         </form>
-        <fieldset id="displayForm"
-            style="margin-top:20px;"></fieldset>
+        <form id="displayForm" style="margin-top:20px;"></form>
 
         <button id="resArea" style="width: 200px; margin-bottom: 20px;" class="resArea" type="button"
-            onclick="turnDark()">If
-            the green background bothers you, click here!</button>
+            onclick="turnDark()">If the green background bothers you, click here!</button>
     </main>
     <div id="foot">
         <footer id="footer"></footer>
         <button class="html-vali vm" onclick="validateHTML()">HTML Validation</button>
         <button class="css-vali vm" onclick="validateCSS()">CSS Validation</button>
         <button class="w3c-vali vm" onclick="validateAIM()">WCAG Validation</button>
-    </div>    <script src="scripts/footnhead.js"></script>
+    </div>    
+    <script src="scripts/footnhead.js"></script>
     <script src="scripts/include.js"></script>
     <script src="scripts/survey.js"></script>
     <script src="scripts/css-toggle.js"></script>

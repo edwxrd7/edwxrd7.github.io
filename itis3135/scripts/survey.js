@@ -1,12 +1,26 @@
 function resetForm() {
     document.getElementById('byo-form').reset();
 }
-
+function checkImage() {
+    const fileInput = document.getElementById('introImage');
+    const file = fileInput.files[0];
+    
+    if (file) {
+      const fileType = file.type;
+      if (fileType.startsWith('image/')) {
+        alert('File is an image.');
+      } else {
+        alert('File is not an image.');
+      }
+    } else {
+      alert('Please select a file.');
+    }
+  }
 
 function loadImage() {
     var image = document.getElementById('introImage').files[0];
     var imageUrl = URL.createObjectURL(image);
-    var text = "<img style=\"border-radius:10px; margin:10px auto;\" src=\"" + imageUrl + "\" >"
+    var text = "<img style=\"border-radius:10px; width:300px; margin:10px auto;\" src=\"" + imageUrl + "\" >"
     document.getElementById('loadImage').innerHTML = text;
 }
 
@@ -28,11 +42,6 @@ function turnDark() {
     img.classList.add('darkModeAdd');
 }
 
-document.addEventListener('click', function (event) {
-    if (event.target && event.target.id === 'submitButton') {
-        byoIntro();
-    }
-});
 
 function addClass() {
     var input = document.createElement("input");
@@ -52,14 +61,14 @@ function byoIntro() {
     var byoAcademicBack = document.getElementById('byo-academicBack').value;
     var byoWebBack = document.getElementById('byo-webBack').value;
     var byoComp = document.getElementById('byo-comp').value;
-    var byoCourses = document.getElementById('addedClass').value;
+    var byoCourses = document.querySelectorAll('#addedClass').value;
     var byoFact = document.getElementById('byo-fact').value;
     var byoAnything = document.getElementById('byo-anything').value;
 
     var imageUrl = URL.createObjectURL(byoImage);
 
     // Concatenate the values into a single string
-    var introText = "<figure><img style=\"border-radius:10px;\" src=\"" + imageUrl + "\" ></figure>" +
+    var introText = "<figure><img style=\"border-radius:10px; width:350px;\" src=\"" + imageUrl + "\" ></figure>" +
         "<figcaption style=\"margin-top;-15px;\">" + byoImageCap +"</figcaption>" +
          "<ul>" +
         "<li  style=\"text-align: justify; align-items: center;\">" + "<strong>Name: </strong>" + byoName + "</li>" +
@@ -79,5 +88,10 @@ function byoIntro() {
     displayFormElement.innerHTML = introText;
 }
 
+document.addEventListener('click', function(event) {
+    if (event.target && event.target.id === 'submitButton') {
+        byoIntro();
+    }
+});
 
 

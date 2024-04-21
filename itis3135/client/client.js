@@ -56,17 +56,18 @@ $(document).ready(() => {
     if (window.innerWidth <= 700) {
       if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 40) {
         document.getElementById("water").style.padding = "15px 0";
-        document.getElementById('logo').style.width = "80px";
+        document.getElementById('logo').style.width = "60px";
         document.getElementById('openNav').style.width = "70px";
         document.getElementById('openNav').style.height = "30px";
         document.getElementById('openNav').style.fontSize = '0';
+        document.getElementById('name').style.fontSize = '20px';
       } else {
         document.getElementById("water").style.padding = "50px 0";
         document.getElementById('logo').style.width = "100px";
         document.getElementById('openNav').style.width = "100px";
         document.getElementById('openNav').style.height = "40px";
         document.getElementById('openNav').style.fontSize = '12px';
-        document.getElementById('name').style.fontSize = '30px';
+        document.getElementById('name').style.fontSize = '20px';
       }
     } else {
       // Adjust styles for screens wider than 700px
