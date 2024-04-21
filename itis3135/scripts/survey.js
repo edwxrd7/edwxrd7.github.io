@@ -1,21 +1,6 @@
 function resetForm() {
     document.getElementById('byo-form').reset();
 }
-function checkImage() {
-    const fileInput = document.getElementById('introImage');
-    const file = fileInput.files[0];
-    
-    if (file) {
-      const fileType = file.type;
-      if (fileType.startsWith('image/')) {
-        alert('File is an image.');
-      } else {
-        alert('File is not an image.');
-      }
-    } else {
-      alert('Please select a file.');
-    }
-  }
 
 function loadImage() {
     var image = document.getElementById('introImage').files[0];
